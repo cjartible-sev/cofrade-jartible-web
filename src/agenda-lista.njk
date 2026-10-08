@@ -1,0 +1,17 @@
+---
+layout: base.njk
+title: Agenda
+permalink: /agenda/
+---
+<div class="wrap" style="padding-top:48px;padding-bottom:56px;max-width:760px">
+  <div class="cab"><h2 class="titulo-pagina">Agenda cofrade</h2></div>
+  <ul class="agenda">
+    {% for a in collections.agenda %}
+    <li data-fecha="{{ a.data.fecha | iso }}">
+      <div class="fecha">{{ a.data.fecha | dia }}<small>{{ a.data.fecha | mes }}</small></div>
+      <div><b>{{ a.data.title }}</b><span>{{ a.data.lugar }}{% if a.data.lugar and a.data.resumen %} · {% endif %}{{ a.data.resumen }}</span></div>
+    </li>
+    {% endfor %}
+  </ul>
+  <p class="vacio" hidden>No hay eventos próximos.</p>
+</div>

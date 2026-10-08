@@ -1,0 +1,15 @@
+---
+layout: base.njk
+title: Noticias
+permalink: /noticias/
+---
+<div class="wrap" style="padding-top:48px;padding-bottom:56px">
+  <div class="cab"><h2 class="titulo-pagina">Noticias</h2></div>
+  <div class="cards">
+    {% for n in collections.noticias %}
+    <a class="card" href="{{ n.url }}">{% set item = n %}{% include "foto.njk" %}
+      <time datetime="{{ n.date | iso }}">{{ n.date | fechaLarga }}</time>
+      <h2>{{ n.data.title }}</h2><p>{{ n.data.resumen }}</p></a>
+    {% else %}<p>Todavía no hay noticias.</p>{% endfor %}
+  </div>
+</div>

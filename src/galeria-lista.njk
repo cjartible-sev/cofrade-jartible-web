@@ -1,0 +1,15 @@
+---
+layout: base.njk
+title: Galería
+permalink: /galeria/
+---
+<div class="wrap" style="padding-top:48px;padding-bottom:56px">
+  <div class="cab"><h2 class="titulo-pagina">Galería</h2></div>
+  <div class="cards">
+    {% for n in collections.galeria %}
+    <a class="card" href="{{ n.url }}">{% set item = n %}{% include "foto.njk" %}
+      <time datetime="{{ n.date | iso }}">{{ n.date | fechaLarga }}</time>
+      <h2>{{ n.data.title }}</h2></a>
+    {% else %}<p>Todavía no hay galerías.</p>{% endfor %}
+  </div>
+</div>

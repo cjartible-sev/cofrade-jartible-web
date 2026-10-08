@@ -1,0 +1,84 @@
+# Cambia TU_USUARIO por tu usuario de GitHub (y el nombre del repositorio si es distinto)
+backend:
+  name: github
+  repo: TU_USUARIO/cofrade-jartible-web
+  branch: main
+
+locale: es
+media_folder: src/uploads
+public_folder: /uploads
+
+collections:
+  - name: noticias
+    label: Noticias y galerías
+    label_singular: Noticia
+    folder: src/noticias
+    create: true
+    extension: md
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    summary: "{{title}}"
+    fields:
+      - { label: Título, name: title, widget: string }
+      - { label: Fecha, name: date, widget: datetime }
+      - label: Tipo
+        name: categoria
+        widget: select
+        default: noticia
+        options:
+          - { label: Noticia, value: noticia }
+          - { label: Galería de fotos, value: galeria }
+      - { label: Foto principal, name: imagen, widget: image, required: false }
+      - { label: Resumen (sale en portada), name: resumen, widget: text, required: false }
+      - { label: Texto, name: body, widget: markdown, required: false }
+      - label: Fotos de la galería
+        name: fotos
+        widget: list
+        required: false
+        field: { label: Foto, name: foto, widget: image }
+
+  - name: agenda
+    label: Agenda
+    label_singular: Evento
+    folder: src/agenda
+    create: true
+    extension: md
+    slug: "{{slug}}"
+    summary: "{{fecha}} · {{title}}"
+    fields:
+      - { label: Evento, name: title, widget: string }
+      - { label: Fecha, name: fecha, widget: datetime, date_format: "YYYY-MM-DD", time_format: false, format: "YYYY-MM-DD" }
+      - { label: Lugar, name: lugar, widget: string, required: false }
+      - { label: Detalle breve, name: resumen, widget: string, required: false }
+
+  - name: paginas
+    label: Páginas (Semana Santa)
+    label_singular: Página
+    folder: src/paginas
+    create: true
+    extension: md
+    slug: "{{slug}}"
+    fields:
+      - { label: Título, name: title, widget: string }
+      - { label: Orden en el menú, name: orden, widget: number, default: 1 }
+      - { label: Texto, name: body, widget: markdown }
+
+  - name: ajustes
+    label: Ajustes de la web
+    files:
+      - label: Ajustes generales
+        name: site
+        file: src/_data/site.json
+        fields:
+          - { label: Frase de la portada, name: lema, widget: string }
+          - { label: Fecha del Domingo de Ramos, name: fecha_ramos, widget: datetime, date_format: "YYYY-MM-DD", time_format: false, format: "YYYY-MM-DD" }
+          - { label: Instagram (enlace), name: instagram, widget: string, required: false }
+          - { label: YouTube (enlace), name: youtube, widget: string, required: false }
+          - { label: TikTok (enlace), name: tiktok, widget: string, required: false }
+          - { label: X (enlace), name: x, widget: string, required: false }
+          - { label: Canal de WhatsApp (enlace), name: whatsapp, widget: string, required: false }
+          - { label: Reto Cofrade - pregunta, name: reto_pregunta, widget: string }
+          - label: Reto Cofrade - respuestas
+            name: reto_respuestas
+            widget: list
+            field: { label: Respuesta, name: respuesta, widget: string }
+          - { label: Reto Cofrade - número de la respuesta correcta, name: reto_correcta, widget: number, value_type: int, min: 1, max: 4 }

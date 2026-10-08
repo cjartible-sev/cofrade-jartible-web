@@ -1,0 +1,95 @@
+---
+layout: base.njk
+permalink: /index.html
+---
+<div class="hero">
+  <div class="wrap">
+    <h1>{{ site.titulo }}</h1>
+    <p>{{ site.lema }}</p>
+    <div class="cuenta" role="timer" aria-label="Cuenta atrás" data-fecha="{{ site.fecha_ramos }}T00:00:00+01:00">
+      <div><strong data-u="d">--</strong><span>días</span></div>
+      <div><strong data-u="h">--</strong><span>horas</span></div>
+      <div><strong data-u="m">--</strong><span>minutos</span></div>
+      <div><strong data-u="s">--</strong><span>segundos</span></div>
+    </div>
+    <small>Faltan para el Domingo de Ramos</small>
+  </div>
+</div>
+
+<section class="bloque" id="noticias">
+  <div class="wrap">
+    <div class="cab"><h2>Últimas noticias</h2><a href="/noticias/">Ver todas</a></div>
+    {% set lista = collections.noticias | primeros(4) %}
+    {% if lista.length %}
+    <div class="noticias">
+      {% for n in lista %}
+        {% if loop.first %}
+          <article class="principal"><a href="{{ n.url }}">
+            {% set item = n %}{% include "foto.njk" %}
+            <time datetime="{{ n.date | iso }}">{{ n.date | fechaLarga }}</time>
+            <h3>{{ n.data.title }}</h3>
+            <p>{{ n.data.resumen }}</p>
+          </a></article>
+          <div class="lista">
+        {% else %}
+          <a href="{{ n.url }}">{% set item = n %}{% include "foto.njk" %}
+            <div><time datetime="{{ n.date | iso }}">{{ n.date | fechaLarga }}</time><h3>{{ n.data.title }}</h3></div></a>
+        {% endif %}
+      {% endfor %}
+      </div>
+    </div>
+    {% else %}<p>Todavía no hay noticias. Crea la primera desde el panel en /admin.</p>{% endif %}
+  </div>
+</section>
+
+<section class="bloque sin-arriba" id="agenda">
+  <div class="wrap dos">
+    <div>
+      <div class="cab"><h2>Agenda cofrade</h2><a href="/agenda/">Agenda completa</a></div>
+      <ul class="agenda" data-max="5">
+        {% for a in collections.agenda %}
+        <li data-fecha="{{ a.data.fecha | iso }}">
+          <div class="fecha">{{ a.data.fecha | dia }}<small>{{ a.data.fecha | mes }}</small></div>
+          <div><b>{{ a.data.title }}</b><span>{{ a.data.lugar }}{% if a.data.lugar and a.data.resumen %} · {% endif %}{{ a.data.resumen }}</span></div>
+        </li>
+        {% endfor %}
+      </ul>
+      <p class="vacio" hidden>No hay eventos próximos.</p>
+    </div>
+    <aside class="reto" id="reto" data-ok="{{ site.reto_correcta }}">
+      <h2>Reto Cofrade</h2>
+      <p>Pon a prueba lo que sabes de Semana Santa. Prueba una pregunta:</p>
+      <div class="q">{{ site.reto_pregunta }}</div>
+      <div class="opc">
+        {% for r in site.reto_respuestas %}<button type="button" data-n="{{ loop.index }}">{{ r }}</button>{% endfor %}
+      </div>
+      <div id="res" aria-live="polite"></div>
+    </aside>
+  </div>
+</section>
+
+{% set fotos = collections.galeria | primeros(6) %}
+{% if fotos.length %}
+<section class="bloque sin-arriba" id="galeria">
+  <div class="wrap">
+    <div class="cab"><h2>Galería</h2><a href="/galeria/">Todas las galerías</a></div>
+    <div class="gal">
+      {% for g in fotos %}<a href="{{ g.url }}" aria-label="{{ g.data.title }}">{% set item = g %}{% include "foto.njk" %}</a>{% endfor %}
+    </div>
+  </div>
+</section>
+{% endif %}
+
+<section class="bloque redes" id="contacto">
+  <div class="wrap">
+    <h2>Síguenos y escríbenos</h2>
+    <p>Enséñanos tus fotos, propón una noticia o cuéntanos qué hermandad echas de menos.</p>
+    <div class="botones">
+      {% if site.instagram %}<a href="{{ site.instagram }}" target="_blank" rel="noopener">Instagram</a>{% endif %}
+      {% if site.youtube %}<a href="{{ site.youtube }}" target="_blank" rel="noopener">YouTube</a>{% endif %}
+      {% if site.tiktok %}<a href="{{ site.tiktok }}" target="_blank" rel="noopener">TikTok</a>{% endif %}
+      {% if site.x %}<a href="{{ site.x }}" target="_blank" rel="noopener">X</a>{% endif %}
+      {% if site.whatsapp %}<a href="{{ site.whatsapp }}" target="_blank" rel="noopener">WhatsApp</a>{% endif %}
+    </div>
+  </div>
+</section>

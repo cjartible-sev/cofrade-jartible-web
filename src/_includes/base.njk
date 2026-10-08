@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{% if title %}{{ title }} · {% endif %}{{ site.titulo }}</title>
+<meta name="description" content="{{ resumen or site.lema }}">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,700;1,500&family=Figtree:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/assets/style.css">
+</head>
+<body>
+<header class="top">
+  <div class="wrap bar">
+    <a class="marca" href="/"><span class="escudo">C</span><b>{{ site.titulo }}</b></a>
+    <nav aria-label="Principal">
+      {% set sub = collections.paginas | submenu %}
+      <ul class="menu">
+        <li><a href="/">Inicio</a></li>
+        <li{% if sub.length %} class="menu-item-has-children"{% endif %}><a href="/semana-santa/">Semana Santa</a>
+          {% if sub.length %}<ul class="sub-menu">{% for p in sub %}<li><a href="{{ p.url }}">{{ p.data.title }}</a></li>{% endfor %}</ul>{% endif %}
+        </li>
+        <li><a href="/agenda/">Agenda</a></li>
+        <li><a href="/noticias/">Noticias</a></li>
+        <li><a href="/galeria/">Galería</a></li>
+        <li><a href="/#contacto">Contacto</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+<main id="contenido">
+{{ content | safe }}
+</main>
+<footer class="pie">© {{ site.titulo }} · Web dedicada a la Semana Santa de Sevilla</footer>
+<script src="/assets/main.js" defer></script>
+</body>
+</html>
