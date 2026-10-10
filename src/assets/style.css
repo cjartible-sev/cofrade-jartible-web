@@ -126,6 +126,8 @@ footer.pie{background:#1d0538;color:#bfaed4;text-align:center;padding:24px 20px;
 .cdl-top a{color:#9aa3ad;text-decoration:none;font-size:.9rem;min-width:90px}
 .cdl-top h2{font-size:1.8rem;color:var(--oro)}
 .cdl-top span{min-width:90px}
+.cdl-titulo{margin:0;line-height:0}
+.cdl-logo{height:46px;width:auto;display:block}
 .cdl-ayuda{color:#9aa3ad;font-size:.92rem;margin-top:4px}
 .cdl-ayuda summary{cursor:pointer;text-align:center}
 #cdl{flex:1;display:flex;flex-direction:column;align-items:center;padding-top:18px}
