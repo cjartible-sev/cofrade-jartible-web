@@ -1,0 +1,22 @@
+---
+layout: base.njk
+title: Cofraddle
+permalink: /minijuegos/cofraddle/
+---
+<div class="wrap" style="padding-top:40px;padding-bottom:56px;max-width:520px">
+  <p><a href="/minijuegos/" style="color:var(--tenue)">← Minijuegos</a></p>
+  <div class="cab"><h2 class="titulo-pagina">Cofraddle</h2></div>
+  <p style="color:var(--tenue);margin-top:0">Adivina la palabra cofrade del día en 6 intentos. Cada día hay una nueva.</p>
+  <details class="cdl-ayuda">
+    <summary>Cómo se juega</summary>
+    <p>Escribe una palabra de 5 letras y pulsa Enter. Verde: la letra está en su sitio. Dorado: está en la palabra, pero en otro sitio. Gris: no está. Las tildes no cuentan. No se comprueba si la palabra existe.</p>
+  </details>
+  <div id="cdl">
+    <div id="cdl-msg" class="cdl-msg" aria-live="polite"></div>
+    <div id="cdl-grid" class="cdl-grid" aria-label="Tablero"></div>
+    <div id="cdl-teclado" class="cdl-teclado"></div>
+    <div id="cdl-fin" class="cdl-fin" hidden></div>
+  </div>
+</div>
+<script type="application/json" id="palabras">{{ cofraddle | dump | safe }}</script>
+<script src="/assets/cofraddle.js" defer></script>

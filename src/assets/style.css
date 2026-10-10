@@ -118,3 +118,30 @@ footer.pie{background:#1d0538;color:#bfaed4;text-align:center;padding:24px 20px;
 .fotos-post img{width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:8px}
 .vacio{color:var(--tenue)}
 [hidden]{display:none!important}
+
+/* Cofraddle */
+:root{--c-ok:#2e7d4f;--c-pre:#c9a227;--c-no:#7a7088}
+.cdl-ayuda{margin:0 0 16px;color:var(--tenue)}
+.cdl-ayuda summary{cursor:pointer;color:var(--titulo)}
+.cdl-msg{min-height:1.6em;text-align:center;font-weight:500;margin-bottom:8px}
+.cdl-grid{display:grid;gap:6px;justify-content:center;margin:0 auto 18px}
+.cdl-fila{display:grid;grid-template-columns:repeat(5,min(15vw,62px));gap:6px}
+.cdl-celda{aspect-ratio:1;display:grid;place-items:center;border:2px solid var(--linea);border-radius:8px;background:var(--papel);font:700 clamp(1.5rem,7vw,2rem) Figtree,sans-serif;text-transform:uppercase}
+.cdl-celda.llena{border-color:var(--tenue)}
+.cdl-celda.ok,.cdl-celda.pre,.cdl-celda.no{color:#fff;border-color:transparent}
+.cdl-celda.ok,.tecla.ok{background:var(--c-ok)}
+.cdl-celda.pre,.tecla.pre{background:var(--c-pre)}
+.cdl-celda.no,.tecla.no{background:var(--c-no)}
+.cdl-fila.sacude{animation:sacude .35s}
+@keyframes sacude{25%{transform:translateX(-6px)}75%{transform:translateX(6px)}}
+.cdl-teclado{display:grid;gap:6px}
+.cdl-teclado .fila{display:flex;gap:5px;justify-content:center}
+.tecla{flex:1;max-width:46px;min-width:0;height:52px;border:0;border-radius:6px;background:var(--linea);color:var(--texto);font:600 .95rem Figtree,sans-serif;cursor:pointer;padding:0}
+.tecla.ancha{flex:1.6;max-width:72px;font-size:.78rem}
+.tecla.ok,.tecla.pre,.tecla.no{color:#fff}
+.cdl-fin{margin-top:22px;padding:20px;border:1px solid var(--oro);border-radius:12px;background:var(--morado);color:#fff;text-align:center}
+.cdl-fin h3{font-size:1.9rem;color:var(--oro)}
+.cdl-fin p{color:#e7dbf5;margin:8px 0}
+.cdl-fin button{margin-top:6px;padding:10px 20px;border-radius:999px;border:1px solid var(--oro);background:transparent;color:var(--oro-suave);font:inherit;font-weight:500;cursor:pointer}
+.cdl-fin button:hover{background:var(--oro);color:var(--morado)}
+@media (prefers-reduced-motion:reduce){.cdl-fila.sacude{animation:none}}

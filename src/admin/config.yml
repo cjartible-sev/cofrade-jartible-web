@@ -82,3 +82,13 @@ collections:
             widget: list
             field: { label: Respuesta, name: respuesta, widget: string }
           - { label: Reto Cofrade - número de la respuesta correcta, name: reto_correcta, widget: number, value_type: int, min: 1, max: 4 }
+      - label: Palabras de Cofraddle
+        name: cofraddle
+        file: src/_data/cofraddle.json
+        fields:
+          - label: Palabras (de 5 letras)
+            name: palabras
+            widget: list
+            fields:
+              - { label: Palabra, name: palabra, widget: string, pattern: ['^[A-Za-zÁÉÍÓÚÜÑáéíóúüñ]{5}$', 'Debe tener exactamente 5 letras'] }
+              - { label: Pista (se muestra al terminar), name: pista, widget: string }
