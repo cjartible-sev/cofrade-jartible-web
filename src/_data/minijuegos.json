@@ -4,15 +4,15 @@
       "titulo": "Cofraddle",
       "url": "/minijuegos/cofraddle/",
       "descripcion": "Adivina la palabra cofrade del día en 6 intentos.",
-      "imagen": "/uploads/cofraddle-tarjeta.png",
+      "imagen": "",
       "oculto": false
     },
     {
       "titulo": "Reto Cofrade",
       "url": "/minijuegos/reto-cofrade/",
       "descripcion": "Pon a prueba lo que sabes de Semana Santa.",
-      "imagen": "",
-      "oculto": true
+      "oculto": true,
+      "imagen": ""
     }
   ]
 }
