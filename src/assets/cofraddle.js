@@ -53,8 +53,8 @@
     var d = document.createElement('div'); d.className = 'fila';
     fl.split('').forEach(function (ch) {
       var b = document.createElement('button'); b.type = 'button'; b.className = 'tecla';
-      if (ch === '>') { b.textContent = 'ENTER'; b.dataset.k = 'ENTER'; b.className += ' ancha'; }
-      else if (ch === '<') { b.textContent = '⌫'; b.dataset.k = 'BORRAR'; b.className += ' ancha'; b.setAttribute('aria-label', 'Borrar'); }
+      if (ch === '>') { b.innerHTML = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg>'; b.dataset.k = 'ENTER'; b.setAttribute('aria-label', 'Enter'); }
+      else if (ch === '<') { b.innerHTML = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 5h12a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H8l-5.5-7z"/><path d="M12.5 9.5l5 5M17.5 9.5l-5 5"/></svg>'; b.dataset.k = 'BORRAR'; b.setAttribute('aria-label', 'Borrar'); }
       else { b.textContent = ch; b.dataset.k = ch; teclas[ch] = b; }
       d.appendChild(b);
     });
@@ -71,7 +71,8 @@
       Array.prototype.forEach.call(fila.children, function (ce, i) {
         var letra = g ? g[i] : (r === est.g.length ? actual[i] : '');
         ce.textContent = letra || '';
-        ce.className = 'cdl-celda' + (ev ? ' ' + ev[i] : (letra ? ' llena' : ''));
+        var activa = !g && !est.fin && r === est.g.length && i === actual.length;
+        ce.className = 'cdl-celda' + (ev ? ' ' + ev[i] : (letra ? ' llena' : '')) + (activa ? ' activa' : '');
         if (ev && (!mejor[g[i]] || orden[ev[i]] > orden[mejor[g[i]]])) mejor[g[i]] = ev[i];
       });
     });
