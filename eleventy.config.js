@@ -1,4 +1,13 @@
 module.exports = function (eleventyConfig) {
+  // Si la web se publica en una subcarpeta (GitHub Pages: /nombre-del-repositorio/),
+  // se añade ese prefijo a todos los enlaces que empiezan por "/".
+  const prefijo = (process.env.PATH_PREFIX || "/").replace(/\/?$/, "/");
+  if (prefijo !== "/") {
+    eleventyConfig.addTransform("prefijo", (content, outputPath) =>
+      outputPath && outputPath.endsWith(".html")
+        ? content.replace(/(href|src)="\/(?!\/)/g, `$1="${prefijo}`)
+        : content);
+  }
   eleventyConfig.addPassthroughCopy({ "src/assets": "assets" });
   eleventyConfig.addPassthroughCopy({ "src/uploads": "uploads" });
   eleventyConfig.addPassthroughCopy({ "src/admin/config.yml": "admin/config.yml" });
