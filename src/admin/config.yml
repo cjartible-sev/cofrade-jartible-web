@@ -1,7 +1,7 @@
 # Cambia TU_USUARIO por tu usuario de GitHub (y el nombre del repositorio si es distinto)
 backend:
   name: github
-  repo: cjartible-sev/cofrade-jartible-web
+  repo: TU_USUARIO/cofrade-jartible-web
   branch: main
 
 locale: es

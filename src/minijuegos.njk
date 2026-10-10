@@ -1,0 +1,17 @@
+---
+layout: base.njk
+title: Minijuegos
+permalink: /minijuegos/
+---
+<div class="wrap" style="padding-top:48px;padding-bottom:56px">
+  <div class="cab"><h2 class="titulo-pagina">Minijuegos</h2></div>
+  <p style="color:var(--tenue);max-width:60ch">Juegos para los que viven la Semana Santa todo el año. Iremos añadiendo más.</p>
+  <div class="cards" style="margin-top:24px">
+    {% for j in minijuegos %}
+    <a class="card" href="{{ j.url }}">
+      <span class="foto vacia" style="aspect-ratio:16/10;border-radius:10px"></span>
+      <h2>{{ j.titulo }}</h2><p>{{ j.descripcion }}</p>
+    </a>
+    {% endfor %}
+  </div>
+</div>

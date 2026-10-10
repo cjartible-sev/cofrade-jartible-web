@@ -43,7 +43,7 @@ permalink: /index.html
 </section>
 
 <section class="bloque sin-arriba" id="agenda">
-  <div class="wrap dos">
+  <div class="wrap">
     <div>
       <div class="cab"><h2>Agenda cofrade</h2><a href="/agenda/">Agenda completa</a></div>
       <ul class="agenda" data-max="5">
@@ -56,15 +56,6 @@ permalink: /index.html
       </ul>
       <p class="vacio" hidden>No hay eventos próximos.</p>
     </div>
-    <aside class="reto" id="reto" data-ok="{{ site.reto_correcta }}">
-      <h2>Reto Cofrade</h2>
-      <p>Pon a prueba lo que sabes de Semana Santa. Prueba una pregunta:</p>
-      <div class="q">{{ site.reto_pregunta }}</div>
-      <div class="opc">
-        {% for r in site.reto_respuestas %}<button type="button" data-n="{{ loop.index }}">{{ r }}</button>{% endfor %}
-      </div>
-      <div id="res" aria-live="polite"></div>
-    </aside>
   </div>
 </section>
 

@@ -20,6 +20,9 @@
         <li{% if sub.length %} class="menu-item-has-children"{% endif %}><a href="/semana-santa/">Semana Santa</a>
           {% if sub.length %}<ul class="sub-menu">{% for p in sub %}<li><a href="{{ p.url }}">{{ p.data.title }}</a></li>{% endfor %}</ul>{% endif %}
         </li>
+        <li class="menu-item-has-children"><a href="/minijuegos/">Minijuegos</a>
+          <ul class="sub-menu">{% for j in minijuegos %}<li><a href="{{ j.url }}">{{ j.titulo }}</a></li>{% endfor %}</ul>
+        </li>
         <li><a href="/agenda/">Agenda</a></li>
         <li><a href="/noticias/">Noticias</a></li>
         <li><a href="/galeria/">Galería</a></li>

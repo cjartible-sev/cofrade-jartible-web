@@ -1,0 +1,17 @@
+---
+layout: base.njk
+title: Reto Cofrade
+permalink: /minijuegos/reto-cofrade/
+---
+<div class="wrap" style="padding-top:48px;padding-bottom:56px;max-width:760px">
+  <p><a href="/minijuegos/" style="color:var(--tenue)">← Minijuegos</a></p>
+  <aside class="reto" id="reto" data-ok="{{ site.reto_correcta }}">
+    <h2>Reto Cofrade</h2>
+    <p>Pon a prueba lo que sabes de Semana Santa.</p>
+    <div class="q">{{ site.reto_pregunta }}</div>
+    <div class="opc">
+      {% for r in site.reto_respuestas %}<button type="button" data-n="{{ loop.index }}">{{ r }}</button>{% endfor %}
+    </div>
+    <div id="res" aria-live="polite"></div>
+  </aside>
+</div>
