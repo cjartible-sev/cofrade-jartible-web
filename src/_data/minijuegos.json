@@ -1,13 +1,18 @@
-[
-  {
-    "titulo": "Cofraddle",
-    "url": "/minijuegos/cofraddle/",
-    "descripcion": "Adivina la palabra cofrade del día en 6 intentos."
-  },
-  {
-    "titulo": "Reto Cofrade",
-    "url": "/minijuegos/reto-cofrade/",
-    "descripcion": "Pon a prueba lo que sabes de Semana Santa.",
-    "oculto": true
-  }
-]
+{
+  "juegos": [
+    {
+      "titulo": "Cofraddle",
+      "url": "/minijuegos/cofraddle/",
+      "descripcion": "Adivina la palabra cofrade del día en 6 intentos.",
+      "imagen": "",
+      "oculto": false
+    },
+    {
+      "titulo": "Reto Cofrade",
+      "url": "/minijuegos/reto-cofrade/",
+      "descripcion": "Pon a prueba lo que sabes de Semana Santa.",
+      "oculto": true,
+      "imagen": ""
+    }
+  ]
+}

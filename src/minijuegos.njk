@@ -7,9 +7,9 @@ permalink: /minijuegos/
   <div class="cab"><h2 class="titulo-pagina">Minijuegos</h2></div>
   <p style="color:var(--tenue);max-width:60ch">Juegos para los que viven la Semana Santa todo el año. Iremos añadiendo más.</p>
   <div class="cards" style="margin-top:24px">
-    {% for j in minijuegos %}{% if not j.oculto %}
+    {% for j in minijuegos.juegos %}{% if not j.oculto %}
     <a class="card" href="{{ j.url }}">
-      <span class="foto vacia" style="aspect-ratio:16/10;border-radius:10px"></span>
+      {% if j.imagen %}<span class="foto"><img src="{{ j.imagen }}" alt="" loading="lazy"></span>{% else %}<span class="foto vacia"></span>{% endif %}
       <h2>{{ j.titulo }}</h2><p>{{ j.descripcion }}</p>
     </a>
     {% endif %}{% endfor %}

@@ -1,7 +1,7 @@
 # Cambia TU_USUARIO por tu usuario de GitHub (y el nombre del repositorio si es distinto)
 backend:
   name: github
-  repo: cjartible-sev/cofrade-jartible-web
+  repo: TU_USUARIO/cofrade-jartible-web
   branch: main
 
 locale: es
@@ -92,3 +92,16 @@ collections:
             fields:
               - { label: Palabra, name: palabra, widget: string, pattern: ['^[A-Za-zÁÉÍÓÚÜÑáéíóúüñ]{5}$', 'Debe tener exactamente 5 letras'] }
               - { label: Pista (se muestra al terminar), name: pista, widget: string }
+      - label: Minijuegos (tarjetas y menú)
+        name: minijuegos
+        file: src/_data/minijuegos.json
+        fields:
+          - label: Juegos
+            name: juegos
+            widget: list
+            fields:
+              - { label: Título, name: titulo, widget: string }
+              - { label: Dirección (no la cambies), name: url, widget: string }
+              - { label: Descripción, name: descripcion, widget: string }
+              - { label: Imagen de la tarjeta, name: imagen, widget: image, required: false }
+              - { label: Ocultar de la web, name: oculto, widget: boolean, default: false, required: false }

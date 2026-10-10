@@ -21,7 +21,7 @@
           {% if sub.length %}<ul class="sub-menu">{% for p in sub %}<li><a href="{{ p.url }}">{{ p.data.title }}</a></li>{% endfor %}</ul>{% endif %}
         </li>
         <li class="menu-item-has-children"><a href="/minijuegos/">Minijuegos</a>
-          <ul class="sub-menu">{% for j in minijuegos %}{% if not j.oculto %}<li><a href="{{ j.url }}">{{ j.titulo }}</a></li>{% endif %}{% endfor %}</ul>
+          <ul class="sub-menu">{% for j in minijuegos.juegos %}{% if not j.oculto %}<li><a href="{{ j.url }}">{{ j.titulo }}</a></li>{% endif %}{% endfor %}</ul>
         </li>
         <li><a href="/agenda/">Agenda</a></li>
         <li><a href="/noticias/">Noticias</a></li>
