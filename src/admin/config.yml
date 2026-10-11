@@ -104,3 +104,35 @@ collections:
               - { label: Descripción, name: descripcion, widget: string }
               - { label: Imagen de la tarjeta, name: imagen, widget: image, required: false }
               - { label: Ocultar de la web, name: oculto, widget: boolean, default: false, required: false }
+      - label: Hermandades (Adivina la hermandad)
+        name: hermandades
+        file: src/_data/hermandades.json
+        fields:
+          - label: Hermandades
+            name: hermandades
+            widget: list
+            summary: "{{fields.nombre}}"
+            fields:
+              - { label: Nombre, name: nombre, widget: string }
+              - label: Tipo
+                name: categoria
+                widget: select
+                options:
+                  - { label: Penitencia, value: penitencia }
+                  - { label: Vísperas (Viernes de Dolores / Sábado de Pasión), value: visperas }
+                  - { label: Gloria, value: gloria }
+              - label: Día de salida
+                name: dia
+                widget: select
+                required: false
+                options: ["Viernes de Dolores","Sábado de Pasión","Domingo de Ramos","Lunes Santo","Martes Santo","Miércoles Santo","Jueves Santo","Madrugá","Viernes Santo","Sábado Santo","Domingo de Resurrección"]
+              - { label: Barrio o sede, name: lugar, widget: string, required: false }
+              - { label: Fundación, name: fundacion, widget: string, required: false }
+              - { label: Titulares, name: titulares, widget: string, required: false }
+              - { label: Túnica o hábito, name: habito, widget: string, required: false }
+              - { label: Curiosidad, name: dato, widget: text, required: false }
+              - label: Otros nombres válidos
+                name: alias
+                widget: list
+                required: false
+                field: { label: Nombre, name: alias, widget: string }

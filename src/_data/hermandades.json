@@ -1,0 +1,1738 @@
+{
+ "hermandades": [
+  {
+   "nombre": "La Borriquita",
+   "categoria": "penitencia",
+   "dia": "Domingo de Ramos",
+   "lugar": "",
+   "fundacion": "Segunda mitad del siglo XVI",
+   "titulares": "",
+   "habito": "",
+   "dato": "La fundaron los medidores de la Alhóndiga y su cortejo va lleno de niños pequeños.",
+   "alias": [
+    "Hermandad de la Borriquita",
+    "Jesús en su Entrada en Jerusalén",
+    "Borriquita"
+   ]
+  },
+  {
+   "nombre": "Jesús Despojado",
+   "categoria": "penitencia",
+   "dia": "Domingo de Ramos",
+   "lugar": "",
+   "fundacion": "1936",
+   "titulares": "",
+   "habito": "",
+   "dato": "Nació para dar culto a una Virgen de los Dolores que estaba en la parroquia de San Marcos.",
+   "alias": [
+    "El Despojado",
+    "Hermandad de Jesús Despojado"
+   ]
+  },
+  {
+   "nombre": "La Cena",
+   "categoria": "penitencia",
+   "dia": "Domingo de Ramos",
+   "lugar": "Iglesia de Nuestra Señora de la Consolación (Los Terceros)",
+   "fundacion": "1591, por fusión de dos hermandades",
+   "titulares": "",
+   "habito": "Túnica y capirote blancos de cola, botonadura roja y cinturón de esparto.",
+   "dato": "",
+   "alias": [
+    "Sagrada Cena",
+    "Hermandad de la Cena"
+   ]
+  },
+  {
+   "nombre": "La Hiniesta",
+   "categoria": "penitencia",
+   "dia": "Domingo de Ramos",
+   "lugar": "Iglesia de San Julián",
+   "fundacion": "Primeras reglas de 1412; refundada en 1879",
+   "titulares": "",
+   "habito": "",
+   "dato": "La Virgen lleva en la peana un relicario con restos de la antigua Hiniesta.",
+   "alias": [
+    "Hermandad de la Hiniesta",
+    "Hiniesta Dolorosa"
+   ]
+  },
+  {
+   "nombre": "La Paz",
+   "categoria": "penitencia",
+   "dia": "Domingo de Ramos",
+   "lugar": "Parroquia de San Sebastián (barrio del Porvenir)",
+   "fundacion": "1939",
+   "titulares": "Jesús de la Victoria y Virgen de la Paz Coronada.",
+   "habito": "Túnica y capa blancas; botonadura y cíngulo rojos en el Cristo y azules en la Virgen.",
+   "dato": "Es la primera cofradía que sale el Domingo de Ramos; la fundaron militares excombatientes.",
+   "alias": [
+    "Hermandad de la Paz"
+   ]
+  },
+  {
+   "nombre": "San Roque",
+   "categoria": "penitencia",
+   "dia": "Domingo de Ramos",
+   "lugar": "Parroquia de San Roque",
+   "fundacion": "Mediados del siglo XVI como sacramental; fusión en 1927",
+   "titulares": "Nuestro Padre Jesús de las Penas y Nuestra Señora de Gracia y Esperanza Coronada.",
+   "habito": "",
+   "dato": "",
+   "alias": [
+    "Hermandad de San Roque"
+   ]
+  },
+  {
+   "nombre": "La Amargura",
+   "categoria": "penitencia",
+   "dia": "Domingo de Ramos",
+   "lugar": "",
+   "fundacion": "Finales del siglo XVII",
+   "titulares": "",
+   "habito": "",
+   "dato": "Se la conoce como «el Silencio Blanco» y su Virgen fue la primera dolorosa sevillana coronada canónicamente, en 1954.",
+   "alias": [
+    "Hermandad de la Amargura"
+   ]
+  },
+  {
+   "nombre": "La Estrella",
+   "categoria": "penitencia",
+   "dia": "Domingo de Ramos",
+   "lugar": "Triana",
+   "fundacion": "1560",
+   "titulares": "Cristo de las Penas y Virgen de la Estrella.",
+   "habito": "Túnica y capa blancas; antifaz morado en el Cristo y azul en la Virgen.",
+   "dato": "La fundaron cargadores de barcos y gente dedicada a los viajes a las Indias.",
+   "alias": [
+    "Hermandad de la Estrella"
+   ]
+  },
+  {
+   "nombre": "El Amor",
+   "categoria": "penitencia",
+   "dia": "Domingo de Ramos",
+   "lugar": "",
+   "fundacion": "1508",
+   "titulares": "",
+   "habito": "Túnica negra de cola con cinturón de esparto.",
+   "dato": "Se fundó para socorrer a los presos, y los ángeles de su paso llevan la inscripción «Amor y socorro a los encarcelados».",
+   "alias": [
+    "Hermandad del Amor",
+    "Cristo del Amor"
+   ]
+  },
+  {
+   "nombre": "San Pablo",
+   "categoria": "penitencia",
+   "dia": "Lunes Santo",
+   "lugar": "",
+   "fundacion": "Reglas de penitencia en 2005; primera estación a la catedral en 2008",
+   "titulares": "Jesús Cautivo y Rescatado.",
+   "habito": "",
+   "dato": "Su misterio presenta al Señor junto a Herodes Antipas, un Sumo Sacerdote, dos romanos y un sanedrita.",
+   "alias": [
+    "Hermandad de San Pablo",
+    "Cautivo y Rescatado"
+   ]
+  },
+  {
+   "nombre": "La Redención",
+   "categoria": "penitencia",
+   "dia": "Lunes Santo",
+   "lugar": "Iglesia de Santa María la Blanca",
+   "fundacion": "1955",
+   "titulares": "",
+   "habito": "",
+   "dato": "Su misterio representa el beso de Judas en el Huerto de los Olivos.",
+   "alias": [
+    "Hermandad de la Redención",
+    "El Beso de Judas"
+   ]
+  },
+  {
+   "nombre": "Santa Genoveva",
+   "categoria": "penitencia",
+   "dia": "Lunes Santo",
+   "lugar": "Parroquia de Santa Genoveva",
+   "fundacion": "1956",
+   "titulares": "Jesús Cautivo y Virgen de las Mercedes.",
+   "habito": "",
+   "dato": "Hizo su primera estación de penitencia a la catedral en 1958.",
+   "alias": [
+    "Hermandad de Santa Genoveva"
+   ]
+  },
+  {
+   "nombre": "Santa Marta",
+   "categoria": "penitencia",
+   "dia": "Lunes Santo",
+   "lugar": "Parroquia de San Andrés",
+   "fundacion": "1948",
+   "titulares": "",
+   "habito": "Túnica negra de cola con cíngulo plateado.",
+   "dato": "La fundó el gremio de la hostelería.",
+   "alias": [
+    "Hermandad de Santa Marta"
+   ]
+  },
+  {
+   "nombre": "San Gonzalo",
+   "categoria": "penitencia",
+   "dia": "Lunes Santo",
+   "lugar": "",
+   "fundacion": "",
+   "titulares": "Jesús ante Caifás (Soberano Poder) y Virgen de la Salud Coronada.",
+   "habito": "",
+   "dato": "La fundó un grupo de jóvenes cofrades de entre 12 y 17 años.",
+   "alias": [
+    "Hermandad de San Gonzalo",
+    "Soberano Poder"
+   ]
+  },
+  {
+   "nombre": "La Vera+Cruz",
+   "categoria": "penitencia",
+   "dia": "Lunes Santo",
+   "lugar": "Casa Grande de San Francisco (convento franciscano)",
+   "fundacion": "1448",
+   "titulares": "",
+   "habito": "",
+   "dato": "Su paso de Cristo representa a Jesús muerto en la cruz.",
+   "alias": [
+    "Vera Cruz",
+    "La Vera-Cruz",
+    "La Vera Cruz",
+    "Hermandad de la Vera Cruz"
+   ]
+  },
+  {
+   "nombre": "Las Penas",
+   "categoria": "penitencia",
+   "dia": "Lunes Santo",
+   "lugar": "Parroquia de San Vicente",
+   "fundacion": "1875",
+   "titulares": "",
+   "habito": "",
+   "dato": "Salió entre 1878 y 1882 y de nuevo desde 1923; su misterio representa una caída de Jesús con la cruz a cuestas.",
+   "alias": [
+    "Hermandad de las Penas"
+   ]
+  },
+  {
+   "nombre": "Las Aguas",
+   "categoria": "penitencia",
+   "dia": "Lunes Santo",
+   "lugar": "",
+   "fundacion": "1750 en San Jacinto; reorganizada en 1891",
+   "titulares": "Cristo muerto en la cruz, con un ángel que recoge su sangre, y Virgen de Guadalupe.",
+   "habito": "Túnica blanca de cola, antifaz morado y cinturón de esparto.",
+   "dato": "",
+   "alias": [
+    "Hermandad de las Aguas"
+   ]
+  },
+  {
+   "nombre": "El Museo",
+   "categoria": "penitencia",
+   "dia": "Lunes Santo",
+   "lugar": "Convento de la Merced (hoy Museo de Bellas Artes)",
+   "fundacion": "1575",
+   "titulares": "Cristo de la Expiración y Virgen de las Aguas.",
+   "habito": "",
+   "dato": "La fundó el gremio de plateros.",
+   "alias": [
+    "Hermandad del Museo"
+   ]
+  },
+  {
+   "nombre": "El Cerro",
+   "categoria": "penitencia",
+   "dia": "Martes Santo",
+   "lugar": "",
+   "fundacion": "1944 (sacramental) y 1955 (gloria), unidas en 1966",
+   "titulares": "",
+   "habito": "",
+   "dato": "En 2019 salió por primera vez con tres pasos, al incorporar a Nuestro Padre Jesús de la Humildad.",
+   "alias": [
+    "Hermandad del Cerro"
+   ]
+  },
+  {
+   "nombre": "San Benito",
+   "categoria": "penitencia",
+   "dia": "Martes Santo",
+   "lugar": "La Calzada",
+   "fundacion": "",
+   "titulares": "Cristo de la Sangre, Presentación de Jesús al Pueblo y Virgen de la Encarnación.",
+   "habito": "",
+   "dato": "La fundaron carpinteros de ribera y calafates; es de origen trianero.",
+   "alias": [
+    "Hermandad de San Benito"
+   ]
+  },
+  {
+   "nombre": "El Dulce Nombre",
+   "categoria": "penitencia",
+   "dia": "Martes Santo",
+   "lugar": "",
+   "fundacion": "1584",
+   "titulares": "",
+   "habito": "Túnica blanca de cola, cinturón estrecho de esparto y antifaz blanco.",
+   "dato": "Se la conoce popularmente como «la Bofetá».",
+   "alias": [
+    "Dulce Nombre",
+    "La Bofetá",
+    "Hermandad del Dulce Nombre"
+   ]
+  },
+  {
+   "nombre": "La Candelaria",
+   "categoria": "penitencia",
+   "dia": "Martes Santo",
+   "lugar": "",
+   "fundacion": "",
+   "titulares": "Nuestro Padre Jesús de la Salud y María Santísima de la Candelaria.",
+   "habito": "",
+   "dato": "Hizo su primera estación de penitencia a la catedral el Martes Santo de 1922.",
+   "alias": [
+    "Hermandad de la Candelaria"
+   ]
+  },
+  {
+   "nombre": "San Esteban",
+   "categoria": "penitencia",
+   "dia": "Martes Santo",
+   "lugar": "",
+   "fundacion": "1926",
+   "titulares": "",
+   "habito": "Túnica color crema, capa y antifaz celestes y cíngulo azul y crema.",
+   "dato": "Su título «Salud y Buen Viaje» viene de los viajeros que salían por la cercana Puerta de Carmona.",
+   "alias": [
+    "Hermandad de San Esteban"
+   ]
+  },
+  {
+   "nombre": "Los Javieres",
+   "categoria": "penitencia",
+   "dia": "Martes Santo",
+   "lugar": "Iglesia de Omnium Sanctorum (desde 1977)",
+   "fundacion": "1955",
+   "titulares": "",
+   "habito": "Túnica negra de cola con cinturón de esparto estrecho.",
+   "dato": "Su paso de palio salió por primera vez en 1980.",
+   "alias": [
+    "Javieres",
+    "Hermandad de los Javieres"
+   ]
+  },
+  {
+   "nombre": "Los Estudiantes",
+   "categoria": "penitencia",
+   "dia": "Martes Santo",
+   "lugar": "",
+   "fundacion": "17 de noviembre de 1924",
+   "titulares": "Cristo de la Buena Muerte (Juan de Mesa) y María Santísima de la Angustia.",
+   "habito": "",
+   "dato": "La fundaron profesores y alumnos de la Universidad, en la calle Laraña; su Cristo es Patrimonio del Estado.",
+   "alias": [
+    "Estudiantes",
+    "Hermandad de los Estudiantes",
+    "Buena Muerte"
+   ]
+  },
+  {
+   "nombre": "Santa Cruz",
+   "categoria": "penitencia",
+   "dia": "Martes Santo",
+   "lugar": "",
+   "fundacion": "1904",
+   "titulares": "",
+   "habito": "",
+   "dato": "Hizo su primera estación de penitencia en 1905 desde el convento de Madre de Dios; a los pies de su Cristo va la Virgen de la Antigua.",
+   "alias": [
+    "Hermandad de Santa Cruz"
+   ]
+  },
+  {
+   "nombre": "El Carmen",
+   "categoria": "penitencia",
+   "dia": "Miércoles Santo",
+   "lugar": "",
+   "fundacion": "1982",
+   "titulares": "",
+   "habito": "",
+   "dato": "Su primera estación a la catedral fue en 2007; su misterio representa las negaciones de san Pedro.",
+   "alias": [
+    "Carmen Doloroso",
+    "Hermandad del Carmen"
+   ]
+  },
+  {
+   "nombre": "El Buen Fin",
+   "categoria": "penitencia",
+   "dia": "Miércoles Santo",
+   "lugar": "San Juan de la Palma (origen)",
+   "fundacion": "1590",
+   "titulares": "",
+   "habito": "",
+   "dato": "La fundó el gremio de curtidores; el contrato de su Cristo, de 1645, fijó un precio de 150 ducados.",
+   "alias": [
+    "Buen Fin",
+    "Hermandad del Buen Fin"
+   ]
+  },
+  {
+   "nombre": "La Sed",
+   "categoria": "penitencia",
+   "dia": "Miércoles Santo",
+   "lugar": "Parroquia de la Concepción Inmaculada",
+   "fundacion": "1969",
+   "titulares": "",
+   "habito": "",
+   "dato": "En su camino de ida entra en el hospital de San Juan de Dios para ofrecer flores a Santa Ángela de la Cruz.",
+   "alias": [
+    "Hermandad de la Sed"
+   ]
+  },
+  {
+   "nombre": "San Bernardo",
+   "categoria": "penitencia",
+   "dia": "Miércoles Santo",
+   "lugar": "",
+   "fundacion": "1748",
+   "titulares": "Cristo de la Salud (Andrés Cansino).",
+   "habito": "",
+   "dato": "Gracias a esta hermandad Sevilla es «Mariana» desde 1946; está muy vinculada al mundo del toreo.",
+   "alias": [
+    "Hermandad de San Bernardo"
+   ]
+  },
+  {
+   "nombre": "La Lanzada",
+   "categoria": "penitencia",
+   "dia": "Miércoles Santo",
+   "lugar": "Iglesia de San Martín (desde 1932)",
+   "fundacion": "1595",
+   "titulares": "",
+   "habito": "",
+   "dato": "",
+   "alias": [
+    "Lanzada",
+    "Hermandad de la Lanzada"
+   ]
+  },
+  {
+   "nombre": "El Baratillo",
+   "categoria": "penitencia",
+   "dia": "Miércoles Santo",
+   "lugar": "",
+   "fundacion": "Reglas aprobadas en 1693",
+   "titulares": "",
+   "habito": "",
+   "dato": "Sus nazarenos forman junto a la Real Maestranza por la estrechez de la capilla.",
+   "alias": [
+    "Baratillo",
+    "Hermandad del Baratillo"
+   ]
+  },
+  {
+   "nombre": "Los Panaderos",
+   "categoria": "penitencia",
+   "dia": "Miércoles Santo",
+   "lugar": "",
+   "fundacion": "",
+   "titulares": "",
+   "habito": "",
+   "dato": "Su vínculo con el gremio de la panadería viene del siglo XVI; su misterio es el arresto de Jesús y su Virgen es la de Regla, coronada en 2010.",
+   "alias": [
+    "Panaderos",
+    "Hermandad de los Panaderos"
+   ]
+  },
+  {
+   "nombre": "Las Siete Palabras",
+   "categoria": "penitencia",
+   "dia": "Miércoles Santo",
+   "lugar": "",
+   "fundacion": "1561, con el título de Nuestra Señora de la Cabeza",
+   "titulares": "",
+   "habito": "",
+   "dato": "La marcha «Pasan los campanilleros» está dedicada a ella.",
+   "alias": [
+    "Siete Palabras",
+    "Hermandad de las Siete Palabras"
+   ]
+  },
+  {
+   "nombre": "El Cristo de Burgos",
+   "categoria": "penitencia",
+   "dia": "Miércoles Santo",
+   "lugar": "Iglesia de San Pedro",
+   "fundacion": "Primeras reglas de 1943",
+   "titulares": "Cristo de Burgos, obra de Juan Bautista Vázquez el Viejo (1573).",
+   "habito": "",
+   "dato": "",
+   "alias": [
+    "Cristo de Burgos",
+    "Burgos",
+    "Hermandad del Cristo de Burgos"
+   ]
+  },
+  {
+   "nombre": "Los Negritos",
+   "categoria": "penitencia",
+   "dia": "Jueves Santo",
+   "lugar": "Capilla de Nuestra Señora de los Ángeles",
+   "fundacion": "Hacia 1393",
+   "titulares": "Cristo de la Fundación (Andrés de Ocampo, 1622) y Virgen de los Ángeles.",
+   "habito": "Túnica blanca de cola, antifaz blanco, escapulario y cíngulo celestes.",
+   "dato": "La fundó el cardenal Mena para acoger a personas negras.",
+   "alias": [
+    "Los Negros",
+    "Hermandad de los Negritos"
+   ]
+  },
+  {
+   "nombre": "La Exaltación",
+   "categoria": "penitencia",
+   "dia": "Jueves Santo",
+   "lugar": "",
+   "fundacion": "Siglo XVI, en la iglesia de San Benito",
+   "titulares": "",
+   "habito": "",
+   "dato": "Se la conoce como «Los Caballos» por los caballos que lleva.",
+   "alias": [
+    "Los Caballos",
+    "Hermandad de la Exaltación"
+   ]
+  },
+  {
+   "nombre": "Las Cigarreras",
+   "categoria": "penitencia",
+   "dia": "Jueves Santo",
+   "lugar": "",
+   "fundacion": "1563",
+   "titulares": "Jesús atado a la Columna y Virgen de la Victoria.",
+   "habito": "",
+   "dato": "Alfonso XIII le otorgó el pendón morado de Castilla.",
+   "alias": [
+    "Hermandad de las Cigarreras"
+   ]
+  },
+  {
+   "nombre": "Monte-Sión",
+   "categoria": "penitencia",
+   "dia": "Jueves Santo",
+   "lugar": "Calle Feria",
+   "fundacion": "1560",
+   "titulares": "",
+   "habito": "",
+   "dato": "Su Virgen del Rosario lleva un palio con rosarios que suenan al golpear los varales.",
+   "alias": [
+    "Monte-Sion",
+    "Montesión",
+    "Hermandad de Monte-Sión"
+   ]
+  },
+  {
+   "nombre": "La Quinta Angustia",
+   "categoria": "penitencia",
+   "dia": "Jueves Santo",
+   "lugar": "",
+   "fundacion": "",
+   "titulares": "Cristo del Descendimiento (Pedro Roldán).",
+   "habito": "Túnica, capa y antifaz morados, con el anagrama JHS en el costado izquierdo.",
+   "dato": "La «Marcha Fúnebre» (1895) está dedicada a ella.",
+   "alias": [
+    "Quinta Angustia",
+    "Hermandad de la Quinta Angustia"
+   ]
+  },
+  {
+   "nombre": "El Valle",
+   "categoria": "penitencia",
+   "dia": "Jueves Santo",
+   "lugar": "",
+   "fundacion": "1590, por fusión de dos hermandades en el convento del Valle",
+   "titulares": "",
+   "habito": "",
+   "dato": "Fue la primera hermandad sevillana con título de archicofradía, concedido por Pío VII.",
+   "alias": [
+    "Hermandad del Valle",
+    "Valle"
+   ]
+  },
+  {
+   "nombre": "Pasión",
+   "categoria": "penitencia",
+   "dia": "Jueves Santo",
+   "lugar": "",
+   "fundacion": "Octubre de 1535",
+   "titulares": "Jesús de la Pasión, obra de Martínez Montañés.",
+   "habito": "",
+   "dato": "Su Jesús de la Pasión creó el modelo barroco de Nazareno con la cruz a cuestas.",
+   "alias": [
+    "Hermandad de Pasión",
+    "Jesús de la Pasión"
+   ]
+  },
+  {
+   "nombre": "El Silencio",
+   "categoria": "penitencia",
+   "dia": "Madrugá",
+   "lugar": "Parroquia de Omnium Sanctorum (donde se fundó)",
+   "fundacion": "Cuaresma de 1340",
+   "titulares": "",
+   "habito": "",
+   "dato": "Abre el orden de paso de la Madrugá; su nombre viene de su rigor penitencial y compostura.",
+   "alias": [
+    "Hermandad del Silencio",
+    "Silencio"
+   ]
+  },
+  {
+   "nombre": "El Gran Poder",
+   "categoria": "penitencia",
+   "dia": "Madrugá",
+   "lugar": "",
+   "fundacion": "1431",
+   "titulares": "Jesús del Gran Poder, obra de Juan de Mesa (1620).",
+   "habito": "",
+   "dato": "La fundaron los duques de Medina Sidonia y recibió la Medalla de Oro de la ciudad en 1995.",
+   "alias": [
+    "Gran Poder",
+    "Hermandad del Gran Poder",
+    "Jesús del Gran Poder",
+    "Señor de Sevilla"
+   ]
+  },
+  {
+   "nombre": "La Macarena",
+   "categoria": "penitencia",
+   "dia": "Madrugá",
+   "lugar": "Basílica de la Macarena (desde 1949)",
+   "fundacion": "1595",
+   "titulares": "",
+   "habito": "",
+   "dato": "Su Virgen fue coronada canónicamente en 1964 y su manto más célebre, el Camaronero, se terminó en 1900.",
+   "alias": [
+    "Esperanza Macarena",
+    "Hermandad de la Macarena",
+    "Macarena"
+   ]
+  },
+  {
+   "nombre": "El Calvario",
+   "categoria": "penitencia",
+   "dia": "Madrugá",
+   "lugar": "Parroquia de la Magdalena",
+   "fundacion": "1571; refundada en 1886",
+   "titulares": "",
+   "habito": "",
+   "dato": "Procesiona entre las dos Esperanzas, la Macarena y la de Triana.",
+   "alias": [
+    "Calvario",
+    "Hermandad del Calvario"
+   ]
+  },
+  {
+   "nombre": "La Esperanza de Triana",
+   "categoria": "penitencia",
+   "dia": "Madrugá",
+   "lugar": "Triana",
+   "fundacion": "1418",
+   "titulares": "",
+   "habito": "",
+   "dato": "La fundó el gremio de ceramistas; su Virgen es patrona de los marineros y por eso su escudo lleva un ancla.",
+   "alias": [
+    "Esperanza de Triana",
+    "Hermandad de la Esperanza de Triana"
+   ]
+  },
+  {
+   "nombre": "Los Gitanos",
+   "categoria": "penitencia",
+   "dia": "Madrugá",
+   "lugar": "Santuario de Nuestro Padre Jesús de la Salud y María Santísima de las Angustias",
+   "fundacion": "1753",
+   "titulares": "",
+   "habito": "Túnica blanca, cíngulo y botonadura morados, capa blanca y antifaz morado.",
+   "dato": "Está muy vinculada a la Casa de Alba, que donó un manto para la Virgen.",
+   "alias": [
+    "Gitanos",
+    "Hermandad de los Gitanos"
+   ]
+  },
+  {
+   "nombre": "La Carretería",
+   "categoria": "penitencia",
+   "dia": "Viernes Santo",
+   "lugar": "",
+   "fundacion": "1550",
+   "titulares": "",
+   "habito": "",
+   "dato": "Un tonelero de Chipiona descubrió una imagen de la Virgen tras un muro de la calle Real de la Carretería; conserva el estilo de las cofradías del siglo XIX.",
+   "alias": [
+    "Carretería",
+    "Hermandad de la Carretería"
+   ]
+  },
+  {
+   "nombre": "La Soledad de San Buenaventura",
+   "categoria": "penitencia",
+   "dia": "Viernes Santo",
+   "lugar": "Convento franciscano de San Buenaventura",
+   "fundacion": "Cofradía desde 1847; primera salida en 1852",
+   "titulares": "",
+   "habito": "",
+   "dato": "",
+   "alias": [
+    "San Buenaventura",
+    "Soledad de San Buenaventura",
+    "Hermandad de San Buenaventura"
+   ]
+  },
+  {
+   "nombre": "El Cachorro",
+   "categoria": "penitencia",
+   "dia": "Viernes Santo",
+   "lugar": "Triana",
+   "fundacion": "1689, por fusión de dos corporaciones trianeras",
+   "titulares": "",
+   "habito": "",
+   "dato": "Su Cristo de la Expiración se llama así porque, según la leyenda, Ruiz Gijón tomó como modelo el rostro de un gitano apodado de ese modo.",
+   "alias": [
+    "Cachorro",
+    "Cristo de la Expiración",
+    "Hermandad del Cachorro"
+   ]
+  },
+  {
+   "nombre": "La O",
+   "categoria": "penitencia",
+   "dia": "Viernes Santo",
+   "lugar": "",
+   "fundacion": "Reglas aprobadas el 31 de agosto de 1566",
+   "titulares": "",
+   "habito": "Túnica de raso morado de cola con cíngulo morado y oro.",
+   "dato": "Fue la primera cofradía de Triana en ir a la catedral, en 1830, por el Puente de Barcas.",
+   "alias": [
+    "Hermandad de la O"
+   ]
+  },
+  {
+   "nombre": "San Isidoro",
+   "categoria": "penitencia",
+   "dia": "Viernes Santo",
+   "lugar": "",
+   "fundacion": "19 de marzo de 1605",
+   "titulares": "",
+   "habito": "",
+   "dato": "La fundó el gremio de cocheros y en el paso de la Virgen del Loreto va una representación del Ejército del Aire.",
+   "alias": [
+    "Las Tres Caídas de San Isidoro",
+    "Hermandad de San Isidoro"
+   ]
+  },
+  {
+   "nombre": "Montserrat",
+   "categoria": "penitencia",
+   "dia": "Viernes Santo",
+   "lugar": "",
+   "fundacion": "",
+   "titulares": "",
+   "habito": "",
+   "dato": "Nació de la devoción a su Virgen entre los catalanes que comerciaban con las Indias; en su cortejo salen dos jóvenes que representan la Fe y la Verónica.",
+   "alias": [
+    "Hermandad de Montserrat"
+   ]
+  },
+  {
+   "nombre": "La Mortaja",
+   "categoria": "penitencia",
+   "dia": "Viernes Santo",
+   "lugar": "",
+   "fundacion": "",
+   "titulares": "",
+   "habito": "",
+   "dato": "Sus orígenes se ligan a una imagen aparecida en Santa Marina y al antiguo hospital de la Piedad.",
+   "alias": [
+    "Sagrada Mortaja",
+    "Hermandad de la Sagrada Mortaja"
+   ]
+  },
+  {
+   "nombre": "El Sol",
+   "categoria": "penitencia",
+   "dia": "Sábado Santo",
+   "lugar": "",
+   "fundacion": "Origen en 1932, en una procesión infantil",
+   "titulares": "",
+   "habito": "",
+   "dato": "Su Virgen del Sol va bajo un palio que muestra una Sacra Conversación con San Juan y la Magdalena.",
+   "alias": [
+    "Hermandad del Sol"
+   ]
+  },
+  {
+   "nombre": "Los Servitas",
+   "categoria": "penitencia",
+   "dia": "Sábado Santo",
+   "lugar": "",
+   "fundacion": "16 de agosto de 1696",
+   "titulares": "",
+   "habito": "Hábito servita: túnica de cola, antifaz y escapulario negros y correas de cuero.",
+   "dato": "",
+   "alias": [
+    "Servitas",
+    "Hermandad de los Servitas"
+   ]
+  },
+  {
+   "nombre": "La Trinidad",
+   "categoria": "penitencia",
+   "dia": "Sábado Santo",
+   "lugar": "",
+   "fundacion": "1507",
+   "titulares": "",
+   "habito": "",
+   "dato": "La fundaron hortelanos en el convento de la Trinidad y su Crucificado salió por primera vez en 2002.",
+   "alias": [
+    "Hermandad de la Trinidad"
+   ]
+  },
+  {
+   "nombre": "El Santo Entierro",
+   "categoria": "penitencia",
+   "dia": "Sábado Santo",
+   "lugar": "",
+   "fundacion": "",
+   "titulares": "",
+   "habito": "",
+   "dato": "Según la tradición la fundó Fernando III; su primer paso se conoce como «la Canina».",
+   "alias": [
+    "Santo Entierro",
+    "Hermandad del Santo Entierro"
+   ]
+  },
+  {
+   "nombre": "La Soledad de San Lorenzo",
+   "categoria": "penitencia",
+   "dia": "Sábado Santo",
+   "lugar": "",
+   "fundacion": "Siglo XVI",
+   "titulares": "",
+   "habito": "Túnica blanca de cola con antifaz, escapulario, cíngulo y manguitos negros.",
+   "dato": "Lleva un único paso: la Virgen de la Soledad al pie de la cruz, con un sudario.",
+   "alias": [
+    "Soledad de San Lorenzo",
+    "San Lorenzo",
+    "Hermandad de la Soledad de San Lorenzo"
+   ]
+  },
+  {
+   "nombre": "La Resurrección",
+   "categoria": "penitencia",
+   "dia": "Domingo de Resurrección",
+   "lugar": "Colegio de la Purísima (La Salle)",
+   "fundacion": "1969",
+   "titulares": "",
+   "habito": "",
+   "dato": "Su primer paso representa a Jesús resucitando y su Virgen de la Aurora es gloriosa.",
+   "alias": [
+    "Resurrección",
+    "Hermandad de la Resurrección"
+   ]
+  },
+  {
+   "nombre": "Pino Montano",
+   "categoria": "visperas",
+   "dia": "Viernes de Dolores",
+   "lugar": "Barrio de Pino Montano",
+   "fundacion": "Años 80, en un colegio del barrio",
+   "titulares": "",
+   "habito": "",
+   "dato": "Su misterio muestra a Jesús apresado en el Huerto de los Olivos y su Virgen del Amor va bajo palio.",
+   "alias": [
+    "Hermandad de Pino Montano"
+   ]
+  },
+  {
+   "nombre": "Pasión y Muerte",
+   "categoria": "visperas",
+   "dia": "Viernes de Dolores",
+   "lugar": "Triana",
+   "fundacion": "1991",
+   "titulares": "Cristo de Pasión y Muerte y Virgen del Desconsuelo.",
+   "habito": "",
+   "dato": "Es hermandad de penitencia desde enero de 2011.",
+   "alias": [
+    "Hermandad de Pasión y Muerte"
+   ]
+  },
+  {
+   "nombre": "La Corona",
+   "categoria": "visperas",
+   "dia": "Viernes de Dolores",
+   "lugar": "Iglesia del Sagrario",
+   "fundacion": "Ya existía en 1340; culto restablecido en 1990",
+   "titulares": "",
+   "habito": "",
+   "dato": "Procesiona un solo paso, con Jesús con la cruz a cuestas.",
+   "alias": [
+    "Hermandad de la Corona",
+    "Cristo de la Corona"
+   ]
+  },
+  {
+   "nombre": "La Misión",
+   "categoria": "visperas",
+   "dia": "Viernes de Dolores",
+   "lugar": "Parroquia de San Antonio María Claret (Heliópolis)",
+   "fundacion": "1948, como hermandad de gloria",
+   "titulares": "",
+   "habito": "",
+   "dato": "Su Cristo con la cruz al hombro procesiona desde 1988.",
+   "alias": [
+    "Hermandad de la Misión"
+   ]
+  },
+  {
+   "nombre": "Bellavista",
+   "categoria": "visperas",
+   "dia": "Viernes de Dolores",
+   "lugar": "Parroquia del Dulce Nombre de Bellavista",
+   "fundacion": "1992",
+   "titulares": "Cristo Cautivo (Castillo Lastrucci) y Virgen de Luis Álvarez Duarte.",
+   "habito": "",
+   "dato": "Su misterio recuerda cuando Pedro corta la oreja a un sayón en Getsemaní.",
+   "alias": [
+    "Hermandad de Bellavista",
+    "Dulce Nombre de Bellavista"
+   ]
+  },
+  {
+   "nombre": "Bendición y Esperanza",
+   "categoria": "visperas",
+   "dia": "Viernes de Dolores",
+   "lugar": "Polígono Sur (Las 3000 Viviendas)",
+   "fundacion": "Oficial desde 2005",
+   "titulares": "",
+   "habito": "",
+   "dato": "Procesiona por las calles del barrio en la tarde del Viernes de Dolores.",
+   "alias": [
+    "Polígono Sur",
+    "Bendición y Esperanza (Polígono Sur)"
+   ]
+  },
+  {
+   "nombre": "Paz y Misericordia",
+   "categoria": "visperas",
+   "dia": "Viernes de Dolores",
+   "lugar": "Rochelambert",
+   "fundacion": "Orígenes en 1995; agrupación parroquial en 2018",
+   "titulares": "Cristo de la Paz (Miñarro, 1985) y Nuestra Señora de la Misericordia (Álvarez Duarte, 2000).",
+   "habito": "",
+   "dato": "",
+   "alias": [
+    "Rochelambert",
+    "Paz y Misericordia (Rochelambert)"
+   ]
+  },
+  {
+   "nombre": "Torreblanca",
+   "categoria": "visperas",
+   "dia": "Sábado de Pasión",
+   "lugar": "Torreblanca",
+   "fundacion": "Aprobada como hermandad de penitencia en 1994",
+   "titulares": "",
+   "habito": "",
+   "dato": "En 2005 estrenó un misterio con el primer interrogatorio de Pilato a Jesús.",
+   "alias": [
+    "Los Dolores de Torreblanca",
+    "Hermandad de Torreblanca"
+   ]
+  },
+  {
+   "nombre": "Divino Perdón",
+   "categoria": "visperas",
+   "dia": "Sábado de Pasión",
+   "lugar": "Parque Alcosa",
+   "fundacion": "1990",
+   "titulares": "Cristo del Divino Perdón y Virgen de la Purísima Concepción, de Navarro Arteaga.",
+   "habito": "",
+   "dato": "",
+   "alias": [
+    "Alcosa",
+    "Hermandad del Divino Perdón"
+   ]
+  },
+  {
+   "nombre": "La Milagrosa",
+   "categoria": "visperas",
+   "dia": "Sábado de Pasión",
+   "lugar": "Ciudad Jardín",
+   "fundacion": "",
+   "titulares": "",
+   "habito": "",
+   "dato": "Nació para rescatar el culto a una dolorosa de la parroquia; su misterio es Jesús de la Esperanza en el Puente Cedrón y procesiona con nazarenos desde 2016.",
+   "alias": [
+    "Milagrosa",
+    "Hermandad de la Milagrosa"
+   ]
+  },
+  {
+   "nombre": "San José Obrero",
+   "categoria": "visperas",
+   "dia": "Sábado de Pasión",
+   "lugar": "Parroquia de San José Obrero y San Francisco de Paula",
+   "fundacion": "Nuevas reglas penitenciales aprobadas en 2012",
+   "titulares": "Jesús de la Caridad y Virgen de los Dolores.",
+   "habito": "",
+   "dato": "",
+   "alias": [
+    "Hermandad de San José Obrero"
+   ]
+  },
+  {
+   "nombre": "Padre Pío",
+   "categoria": "visperas",
+   "dia": "Sábado de Pasión",
+   "lugar": "Palmete",
+   "fundacion": "",
+   "titulares": "Un Nazareno de la Salud y Clemencia y una dolorosa de la Divina Gracia.",
+   "habito": "",
+   "dato": "Nace de una peña flamenca del barrio y su estación de penitencia llega hasta la parroquia de los Dolores, en el Cerro.",
+   "alias": [
+    "Hermandad de Padre Pío"
+   ]
+  },
+  {
+   "nombre": "Rosario de San Jerónimo",
+   "categoria": "visperas",
+   "dia": "Sábado de Pasión",
+   "lugar": "Barrio de San Jerónimo",
+   "fundacion": "Procesiona desde 2016",
+   "titulares": "Señor del Amor en su Divina Misericordia y Virgen de la Salud, de Mariano Sánchez del Pino.",
+   "habito": "",
+   "dato": "",
+   "alias": [
+    "San Jerónimo",
+    "Agrupación Parroquial del Rosario de San Jerónimo"
+   ]
+  },
+  {
+   "nombre": "Las Maravillas",
+   "categoria": "visperas",
+   "dia": "Sábado de Pasión",
+   "lugar": "San Diego (parroquia de Santa María de la Cabeza)",
+   "fundacion": "Primera salida en 2022",
+   "titulares": "Cristo de los Afligidos y María Santísima de las Maravillas, de Dubé de Luque.",
+   "habito": "",
+   "dato": "",
+   "alias": [
+    "Maravillas",
+    "Agrupación Parroquial de las Maravillas"
+   ]
+  },
+  {
+   "nombre": "La Humildad (La Espiga)",
+   "categoria": "visperas",
+   "dia": "Sábado de Pasión",
+   "lugar": "Sevilla Este",
+   "fundacion": "Procesiona desde 2023",
+   "titulares": "Nuestro Padre Jesús de la Humildad y Nuestra Señora de los Ángeles.",
+   "habito": "",
+   "dato": "Nació de una Cruz de Mayo de la tertulia cofrade «La Espiga».",
+   "alias": [
+    "La Espiga",
+    "Humildad La Espiga",
+    "Nuestro Padre Jesús de la Humildad"
+   ]
+  },
+  {
+   "nombre": "Cristo de los Desamparados",
+   "categoria": "visperas",
+   "dia": "Sábado de Pasión",
+   "lugar": "Iglesia del Santo Ángel",
+   "fundacion": "Primera salida el Sábado de Pasión de 2024",
+   "titulares": "Cristo de los Desamparados, crucificado de Martínez Montañés (hacia 1617).",
+   "habito": "",
+   "dato": "",
+   "alias": [
+    "Los Desamparados",
+    "Desamparados (Santo Ángel)",
+    "Santo Ángel"
+   ]
+  },
+  {
+   "nombre": "Rocío de Triana",
+   "categoria": "gloria",
+   "dia": "",
+   "lugar": "Triana",
+   "fundacion": "",
+   "titulares": "",
+   "habito": "",
+   "dato": "Una de las cinco hermandades rocieras filiales de Sevilla.",
+   "alias": [
+    "Hermandad del Rocío de Triana"
+   ]
+  },
+  {
+   "nombre": "Rocío de Sevilla (El Salvador)",
+   "categoria": "gloria",
+   "dia": "",
+   "lugar": "Plaza del Salvador",
+   "fundacion": "",
+   "titulares": "",
+   "habito": "",
+   "dato": "Una de las cinco hermandades rocieras filiales de Sevilla.",
+   "alias": [
+    "Rocío de Sevilla",
+    "Rocío del Salvador"
+   ]
+  },
+  {
+   "nombre": "Rocío del Cerro del Águila",
+   "categoria": "gloria",
+   "dia": "",
+   "lugar": "Cerro del Águila",
+   "fundacion": "",
+   "titulares": "",
+   "habito": "",
+   "dato": "Una de las cinco hermandades rocieras filiales de Sevilla.",
+   "alias": [
+    "Rocío Cerro del Águila"
+   ]
+  },
+  {
+   "nombre": "Rocío de Sevilla Sur",
+   "categoria": "gloria",
+   "dia": "",
+   "lugar": "Parroquia de San Juan de Ávila (Tiro de Línea)",
+   "fundacion": "",
+   "titulares": "",
+   "habito": "",
+   "dato": "Una de las cinco hermandades rocieras filiales de Sevilla.",
+   "alias": [
+    "Rocío Sur"
+   ]
+  },
+  {
+   "nombre": "Rocío de la Macarena",
+   "categoria": "gloria",
+   "dia": "",
+   "lugar": "La Macarena",
+   "fundacion": "",
+   "titulares": "",
+   "habito": "",
+   "dato": "Una de las cinco hermandades rocieras filiales de Sevilla.",
+   "alias": [
+    "Rocío Macarena"
+   ]
+  },
+  {
+   "nombre": "Anunciación (Juan XXIII)",
+   "categoria": "gloria",
+   "dia": "",
+   "lugar": "Barrio de Juan XXIII (Jesús del Poder)",
+   "fundacion": "",
+   "titulares": "",
+   "habito": "",
+   "dato": "",
+   "alias": [
+    "Anunciación"
+   ]
+  },
+  {
+   "nombre": "La Candelaria (gloria)",
+   "categoria": "gloria",
+   "dia": "",
+   "lugar": "",
+   "fundacion": "",
+   "titulares": "",
+   "habito": "",
+   "dato": "",
+   "alias": []
+  },
+  {
+   "nombre": "Carmen (Calatrava)",
+   "categoria": "gloria",
+   "dia": "",
+   "lugar": "Calatrava",
+   "fundacion": "",
+   "titulares": "",
+   "habito": "",
+   "dato": "",
+   "alias": []
+  },
+  {
+   "nombre": "Pastora de Triana",
+   "categoria": "gloria",
+   "dia": "",
+   "lugar": "Triana",
+   "fundacion": "",
+   "titulares": "",
+   "habito": "",
+   "dato": "",
+   "alias": []
+  },
+  {
+   "nombre": "Buen Aire (Pasión y Muerte)",
+   "categoria": "gloria",
+   "dia": "",
+   "lugar": "Hermandad de Pasión y Muerte",
+   "fundacion": "",
+   "titulares": "",
+   "habito": "",
+   "dato": "",
+   "alias": [
+    "Buen Aire"
+   ]
+  },
+  {
+   "nombre": "Virgen de la Cabeza (San Juan de la Palma)",
+   "categoria": "gloria",
+   "dia": "",
+   "lugar": "San Juan de la Palma",
+   "fundacion": "",
+   "titulares": "",
+   "habito": "",
+   "dato": "Es la Real Cofradía Sevillana de la Virgen de la Cabeza.",
+   "alias": [
+    "Virgen de la Cabeza",
+    "La Cabeza"
+   ]
+  },
+  {
+   "nombre": "Encarnación (La Cena)",
+   "categoria": "gloria",
+   "dia": "",
+   "lugar": "Hermandad de la Cena",
+   "fundacion": "",
+   "titulares": "",
+   "habito": "",
+   "dato": "",
+   "alias": []
+  },
+  {
+   "nombre": "Pilar",
+   "categoria": "gloria",
+   "dia": "",
+   "lugar": "",
+   "fundacion": "",
+   "titulares": "",
+   "habito": "",
+   "dato": "",
+   "alias": []
+  },
+  {
+   "nombre": "Rosario (Dos de Mayo)",
+   "categoria": "gloria",
+   "dia": "",
+   "lugar": "Dos de Mayo (Hermandad de las Aguas)",
+   "fundacion": "",
+   "titulares": "",
+   "habito": "",
+   "dato": "",
+   "alias": []
+  },
+  {
+   "nombre": "Rosario (San Julián)",
+   "categoria": "gloria",
+   "dia": "",
+   "lugar": "Parroquia de San Julián",
+   "fundacion": "",
+   "titulares": "",
+   "habito": "",
+   "dato": "",
+   "alias": []
+  },
+  {
+   "nombre": "Virgen de la Sierra",
+   "categoria": "gloria",
+   "dia": "",
+   "lugar": "",
+   "fundacion": "",
+   "titulares": "",
+   "habito": "",
+   "dato": "Filial en Sevilla de la patrona de Cabra.",
+   "alias": [
+    "La Sierra"
+   ]
+  },
+  {
+   "nombre": "Reina de Todos los Santos",
+   "categoria": "gloria",
+   "dia": "",
+   "lugar": "",
+   "fundacion": "",
+   "titulares": "",
+   "habito": "",
+   "dato": "",
+   "alias": [
+    "Todos los Santos"
+   ]
+  },
+  {
+   "nombre": "Pura y Limpia (Postigo)",
+   "categoria": "gloria",
+   "dia": "",
+   "lugar": "El Postigo",
+   "fundacion": "",
+   "titulares": "",
+   "habito": "",
+   "dato": "",
+   "alias": []
+  },
+  {
+   "nombre": "Alegría",
+   "categoria": "gloria",
+   "dia": "",
+   "lugar": "",
+   "fundacion": "",
+   "titulares": "",
+   "habito": "",
+   "dato": "",
+   "alias": [
+    "Virgen de la Alegría"
+   ]
+  },
+  {
+   "nombre": "Inmaculado Corazón de María (Claret)",
+   "categoria": "gloria",
+   "dia": "",
+   "lugar": "Parroquia de San Antonio María Claret",
+   "fundacion": "",
+   "titulares": "",
+   "habito": "",
+   "dato": "",
+   "alias": []
+  },
+  {
+   "nombre": "Inmaculado Corazón de María (Torreblanca)",
+   "categoria": "gloria",
+   "dia": "",
+   "lugar": "Torreblanca de los Caños",
+   "fundacion": "",
+   "titulares": "",
+   "habito": "",
+   "dato": "",
+   "alias": []
+  },
+  {
+   "nombre": "Carmen (San Leandro)",
+   "categoria": "gloria",
+   "dia": "",
+   "lugar": "San Leandro",
+   "fundacion": "",
+   "titulares": "",
+   "habito": "",
+   "dato": "",
+   "alias": []
+  },
+  {
+   "nombre": "Juncal",
+   "categoria": "gloria",
+   "dia": "",
+   "lugar": "",
+   "fundacion": "",
+   "titulares": "",
+   "habito": "",
+   "dato": "",
+   "alias": [
+    "Virgen del Juncal"
+   ]
+  },
+  {
+   "nombre": "Mercedes (Puerta Real)",
+   "categoria": "gloria",
+   "dia": "",
+   "lugar": "Puerta Real",
+   "fundacion": "",
+   "titulares": "",
+   "habito": "",
+   "dato": "",
+   "alias": []
+  },
+  {
+   "nombre": "Rosario (La Corona)",
+   "categoria": "gloria",
+   "dia": "",
+   "lugar": "Hermandad de la Corona",
+   "fundacion": "",
+   "titulares": "",
+   "habito": "",
+   "dato": "",
+   "alias": []
+  },
+  {
+   "nombre": "Salud (El Sol)",
+   "categoria": "gloria",
+   "dia": "",
+   "lugar": "Hermandad del Sol",
+   "fundacion": "",
+   "titulares": "",
+   "habito": "",
+   "dato": "",
+   "alias": []
+  },
+  {
+   "nombre": "Rosario (La Macarena)",
+   "categoria": "gloria",
+   "dia": "",
+   "lugar": "Hermandad de la Macarena",
+   "fundacion": "",
+   "titulares": "",
+   "habito": "",
+   "dato": "",
+   "alias": []
+  },
+  {
+   "nombre": "San Onofre",
+   "categoria": "gloria",
+   "dia": "",
+   "lugar": "",
+   "fundacion": "",
+   "titulares": "",
+   "habito": "",
+   "dato": "Es la hermandad de las Benditas Ánimas del Purgatorio y el Señor San Onofre.",
+   "alias": []
+  },
+  {
+   "nombre": "Patrocinio (San Bernardo)",
+   "categoria": "gloria",
+   "dia": "",
+   "lugar": "Hermandad de San Bernardo",
+   "fundacion": "",
+   "titulares": "",
+   "habito": "",
+   "dato": "",
+   "alias": []
+  },
+  {
+   "nombre": "Santas Justa y Rufina (La Estrella)",
+   "categoria": "gloria",
+   "dia": "",
+   "lugar": "Hermandad de la Estrella (Triana)",
+   "fundacion": "",
+   "titulares": "",
+   "habito": "",
+   "dato": "",
+   "alias": [
+    "Justa y Rufina"
+   ]
+  },
+  {
+   "nombre": "Pastora de San Antonio",
+   "categoria": "gloria",
+   "dia": "",
+   "lugar": "San Antonio",
+   "fundacion": "",
+   "titulares": "",
+   "habito": "",
+   "dato": "",
+   "alias": [
+    "Divina Pastora de San Antonio"
+   ]
+  },
+  {
+   "nombre": "San Hermenegildo",
+   "categoria": "gloria",
+   "dia": "",
+   "lugar": "",
+   "fundacion": "",
+   "titulares": "",
+   "habito": "",
+   "dato": "Es la hermandad del Santo Rey Mártir Hermenegildo.",
+   "alias": []
+  },
+  {
+   "nombre": "La Hiniesta (gloria)",
+   "categoria": "gloria",
+   "dia": "",
+   "lugar": "Iglesia de San Julián",
+   "fundacion": "",
+   "titulares": "",
+   "habito": "",
+   "dato": "",
+   "alias": []
+  },
+  {
+   "nombre": "Carmen y Rosario (Santa Catalina)",
+   "categoria": "gloria",
+   "dia": "",
+   "lugar": "Santa Catalina",
+   "fundacion": "",
+   "titulares": "",
+   "habito": "",
+   "dato": "",
+   "alias": []
+  },
+  {
+   "nombre": "Carmen (San Gil)",
+   "categoria": "gloria",
+   "dia": "",
+   "lugar": "San Gil",
+   "fundacion": "",
+   "titulares": "",
+   "habito": "",
+   "dato": "",
+   "alias": []
+  },
+  {
+   "nombre": "La Luz (San Esteban)",
+   "categoria": "gloria",
+   "dia": "",
+   "lugar": "San Esteban",
+   "fundacion": "",
+   "titulares": "",
+   "habito": "",
+   "dato": "",
+   "alias": [
+    "Luz"
+   ]
+  },
+  {
+   "nombre": "Valvanera",
+   "categoria": "gloria",
+   "dia": "",
+   "lugar": "",
+   "fundacion": "",
+   "titulares": "",
+   "habito": "",
+   "dato": "",
+   "alias": [
+    "Virgen de Valvanera"
+   ]
+  },
+  {
+   "nombre": "Santa Lucía",
+   "categoria": "gloria",
+   "dia": "",
+   "lugar": "",
+   "fundacion": "",
+   "titulares": "",
+   "habito": "",
+   "dato": "Es la hermandad dedicada a Santa Lucía, virgen y mártir.",
+   "alias": []
+  },
+  {
+   "nombre": "Rosario (Barrio León)",
+   "categoria": "gloria",
+   "dia": "",
+   "lugar": "Barrio León",
+   "fundacion": "",
+   "titulares": "",
+   "habito": "",
+   "dato": "",
+   "alias": []
+  },
+  {
+   "nombre": "Rosario (Los Humeros)",
+   "categoria": "gloria",
+   "dia": "",
+   "lugar": "Los Humeros",
+   "fundacion": "",
+   "titulares": "",
+   "habito": "",
+   "dato": "",
+   "alias": []
+  },
+  {
+   "nombre": "Nieves",
+   "categoria": "gloria",
+   "dia": "",
+   "lugar": "",
+   "fundacion": "",
+   "titulares": "",
+   "habito": "",
+   "dato": "",
+   "alias": [
+    "Virgen de las Nieves",
+    "Las Nieves"
+   ]
+  },
+  {
+   "nombre": "Antigua",
+   "categoria": "gloria",
+   "dia": "",
+   "lugar": "",
+   "fundacion": "",
+   "titulares": "",
+   "habito": "",
+   "dato": "Comparte titularidad con San Antonio de Padua.",
+   "alias": [
+    "La Antigua",
+    "Virgen de la Antigua"
+   ]
+  },
+  {
+   "nombre": "Prado",
+   "categoria": "gloria",
+   "dia": "",
+   "lugar": "",
+   "fundacion": "",
+   "titulares": "",
+   "habito": "",
+   "dato": "",
+   "alias": [
+    "Virgen del Prado",
+    "Nuestra Señora del Prado"
+   ]
+  },
+  {
+   "nombre": "Araceli",
+   "categoria": "gloria",
+   "dia": "",
+   "lugar": "",
+   "fundacion": "",
+   "titulares": "",
+   "habito": "",
+   "dato": "Es una hermandad franciscana.",
+   "alias": [
+    "Virgen de Araceli"
+   ]
+  },
+  {
+   "nombre": "Desamparados (Alcosa)",
+   "categoria": "gloria",
+   "dia": "",
+   "lugar": "Parque Alcosa",
+   "fundacion": "",
+   "titulares": "",
+   "habito": "",
+   "dato": "",
+   "alias": []
+  },
+  {
+   "nombre": "Carmen (Santa Ana)",
+   "categoria": "gloria",
+   "dia": "",
+   "lugar": "Iglesia de Santa Ana (Triana)",
+   "fundacion": "",
+   "titulares": "",
+   "habito": "",
+   "dato": "",
+   "alias": []
+  },
+  {
+   "nombre": "Carmen (Puente de Triana)",
+   "categoria": "gloria",
+   "dia": "",
+   "lugar": "Puente de Triana",
+   "fundacion": "",
+   "titulares": "",
+   "habito": "",
+   "dato": "",
+   "alias": []
+  },
+  {
+   "nombre": "Pastora (Padre Pío)",
+   "categoria": "gloria",
+   "dia": "",
+   "lugar": "Hermandad de Padre Pío (Palmete)",
+   "fundacion": "",
+   "titulares": "",
+   "habito": "",
+   "dato": "",
+   "alias": []
+  },
+  {
+   "nombre": "Pastora (Santa Marina)",
+   "categoria": "gloria",
+   "dia": "",
+   "lugar": "Parroquia de Santa Marina",
+   "fundacion": "",
+   "titulares": "",
+   "habito": "",
+   "dato": "",
+   "alias": []
+  },
+  {
+   "nombre": "Virgen de los Reyes (Sastres)",
+   "categoria": "gloria",
+   "dia": "",
+   "lugar": "Gremio de los sastres",
+   "fundacion": "",
+   "titulares": "",
+   "habito": "",
+   "dato": "Es la patrona de los sastres.",
+   "alias": [
+    "Reyes (Sastres)",
+    "Los Reyes (Sastres)"
+   ]
+  },
+  {
+   "nombre": "Madre de Dios del Rosario",
+   "categoria": "gloria",
+   "dia": "",
+   "lugar": "",
+   "fundacion": "",
+   "titulares": "",
+   "habito": "",
+   "dato": "Es la patrona de capataces y costaleros de Sevilla.",
+   "alias": []
+  },
+  {
+   "nombre": "Guadalupe (Misericordia)",
+   "categoria": "gloria",
+   "dia": "",
+   "lugar": "Misericordia",
+   "fundacion": "",
+   "titulares": "",
+   "habito": "",
+   "dato": "Es una hermandad franciscana.",
+   "alias": []
+  },
+  {
+   "nombre": "Rosario (Siete Palabras)",
+   "categoria": "gloria",
+   "dia": "",
+   "lugar": "Hermandad de las Siete Palabras",
+   "fundacion": "",
+   "titulares": "",
+   "habito": "",
+   "dato": "",
+   "alias": []
+  },
+  {
+   "nombre": "Virgen del Mar",
+   "categoria": "gloria",
+   "dia": "",
+   "lugar": "",
+   "fundacion": "",
+   "titulares": "",
+   "habito": "",
+   "dato": "Filial en Sevilla de la patrona de Almería.",
+   "alias": [
+    "Nuestra Señora del Mar",
+    "Mar"
+   ]
+  },
+  {
+   "nombre": "Milagrosa (gloria)",
+   "categoria": "gloria",
+   "dia": "",
+   "lugar": "Ciudad Jardín",
+   "fundacion": "",
+   "titulares": "",
+   "habito": "",
+   "dato": "",
+   "alias": []
+  },
+  {
+   "nombre": "Pura y Limpia (Esperanza de Triana)",
+   "categoria": "gloria",
+   "dia": "",
+   "lugar": "Hermandad de la Esperanza de Triana",
+   "fundacion": "",
+   "titulares": "",
+   "habito": "",
+   "dato": "",
+   "alias": []
+  }
+ ]
+}

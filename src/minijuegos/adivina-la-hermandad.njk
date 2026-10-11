@@ -1,0 +1,33 @@
+---
+layout: base.njk
+title: Adivina la hermandad
+permalink: /minijuegos/adivina-la-hermandad/
+---
+<div class="hdd-pantalla">
+  <div class="hdd-caja" id="hdd">
+    <div class="hdd-tabs">
+      <button type="button" id="hdd-t1" class="hdd-tab on">📅 Hermandad del día</button>
+      <button type="button" id="hdd-t2" class="hdd-tab">∞ Modo infinito</button>
+    </div>
+    <p class="hdd-ey" id="hdd-ey"></p>
+    <h1 class="hdd-h">¿Qué hermandad es?</h1>
+    <p class="hdd-fecha" id="hdd-fecha"></p>
+    <div class="hdd-cis" id="hdd-ci"></div>
+    <p class="hdd-int" id="hdd-int"></p>
+    <p class="hdd-des" id="hdd-des"></p>
+    <div class="hdd-msg" id="hdd-msg" aria-live="polite"></div>
+    <div class="hdd-form" id="hdd-form">
+      <div class="hdd-campo">
+        <input id="hdd-in" type="text" placeholder="Escribe una hermandad" autocomplete="off" autocapitalize="off" spellcheck="false" aria-label="Escribe una hermandad">
+        <ul id="hdd-sug" class="hdd-sug" role="listbox" hidden></ul>
+      </div>
+      <button type="button" id="hdd-go" class="hdd-go">Probar</button>
+    </div>
+    <div class="hdd-fa" id="hdd-fa"></div>
+    <div class="hdd-fin" id="hdd-fin" hidden></div>
+    <div class="hdd-ps" id="hdd-ps"></div>
+    <p class="hdd-pie"><a href="/minijuegos/">← Minijuegos</a></p>
+  </div>
+</div>
+<script type="application/json" id="hdd-datos">{{ hermandades | dump | safe }}</script>
+<script src="/assets/hermandad.js" defer></script>

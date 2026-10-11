@@ -155,3 +155,52 @@ footer.pie{background:#1d0538;color:#bfaed4;text-align:center;padding:24px 20px;
 .cdl-fin button{margin-top:6px;padding:10px 20px;border-radius:999px;border:1px solid var(--oro);background:transparent;color:var(--oro-suave);font:inherit;font-weight:500;cursor:pointer}
 .cdl-fin button:hover{background:var(--oro);color:var(--morado)}
 @media (prefers-reduced-motion:reduce){.cdl-fila.sacude{animation:none}}
+
+/* Adivina la hermandad */
+.hdd-pantalla{background:linear-gradient(180deg,#2b0a4a 0%,#1a0431 100%);color:#fff;min-height:calc(100vh - 70px);min-height:calc(100dvh - 70px);padding:18px 14px calc(30px + env(safe-area-inset-bottom,0px))}
+.hdd-caja{max-width:620px;margin:0 auto;text-align:center}
+.hdd-tabs{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-bottom:14px}
+.hdd-tab{font:700 .95rem Figtree,sans-serif;padding:13px 10px;border-radius:12px;border:1px solid rgba(255,255,255,.18);background:rgba(255,255,255,.06);color:#d8cbe9;cursor:pointer}
+.hdd-tab.on{background:linear-gradient(90deg,#e8368f,#8e2de2);border-color:transparent;color:#fff}
+.hdd-ey{margin:6px 0 0;color:#f5d77a;font:700 .74rem Figtree,sans-serif;letter-spacing:.08em}
+.hdd-h{font:800 clamp(1.9rem,7vw,2.6rem)/1.1 Figtree,sans-serif;margin:4px 0 6px;color:#fff}
+.hdd-fecha{margin:0 0 14px;color:#cbbfe0;font-size:.92rem}
+.hdd-cis{display:flex;gap:10px;justify-content:center}
+.hdd-cis span{width:38px;height:38px;border-radius:50%;display:grid;place-items:center;font-weight:700;border:2px solid rgba(255,255,255,.3);background:rgba(255,255,255,.08);color:#e9defa}
+.hdd-cis .cur{border-color:#f5d77a;background:rgba(245,215,122,.16);box-shadow:0 0 0 4px rgba(245,215,122,.15)}
+.hdd-cis .mal{border-color:#e5738a;background:rgba(229,115,138,.18);color:#ffc2cd}
+.hdd-cis .ok{border-color:#6fd39a;background:#2e7d4f;color:#fff}
+.hdd-int{margin:8px 0 14px;font-size:.85rem;color:#cbbfe0}
+.hdd-des{margin:0 0 14px;color:#d8cbe9;font-size:.93rem}
+.hdd-msg{min-height:1.4em;color:#f5d77a;font-weight:600;margin-bottom:4px}
+.hdd-form{display:flex;gap:10px;align-items:flex-start;text-align:left}
+.hdd-form[hidden],.hdd-fin[hidden],.hdd-sug[hidden]{display:none}
+.hdd-campo{position:relative;flex:1}
+.hdd-campo input{width:100%;height:48px;border:0;border-radius:12px;padding:0 14px;font:500 1rem Figtree,sans-serif;background:#fff;color:#2a1a3a}
+.hdd-campo input::placeholder{color:#8a8196}
+.hdd-sug{position:absolute;left:0;right:0;top:calc(100% + 4px);z-index:5;margin:0;padding:6px;list-style:none;background:#fff;color:#2a1a3a;border-radius:12px;box-shadow:0 12px 30px rgba(0,0,0,.4);max-height:260px;overflow:auto}
+.hdd-sug li{padding:9px 10px;border-radius:8px;cursor:pointer;font-weight:500}
+.hdd-sug li:hover,.hdd-sug li.on{background:#f1e4ff}
+.hdd-go{height:48px;padding:0 22px;border:0;border-radius:12px;font:700 1rem Figtree,sans-serif;color:#fff;cursor:pointer;background:linear-gradient(90deg,#e8368f,#8e2de2);box-shadow:0 8px 22px rgba(200,40,150,.35)}
+.hdd-fa{display:flex;flex-wrap:wrap;gap:6px;justify-content:center;margin:12px 0 4px}
+.hdd-chip{font-size:.8rem;padding:4px 10px;border-radius:999px;background:rgba(229,115,138,.18);border:1px solid rgba(229,115,138,.45);color:#ffc2cd}
+.hdd-chip.ok{background:rgba(46,125,79,.4);border-color:#6fd39a;color:#d6ffe6}
+.hdd-fin{margin:16px 0 4px;padding:18px;border-radius:14px;background:rgba(255,255,255,.08);border:1px solid rgba(245,215,122,.5)}
+.hdd-fin h3{font:800 1.7rem Figtree,sans-serif;color:#f5d77a;margin:0}
+.hdd-fin p{margin:6px 0 10px;color:#e7dbf5}
+.hdd-fin button{padding:10px 20px;border:0;border-radius:999px;font:700 .95rem Figtree,sans-serif;color:#fff;cursor:pointer;background:linear-gradient(90deg,#e8368f,#8e2de2)}
+.hdd-ps{display:grid;gap:10px;margin-top:18px;text-align:left}
+.hdd-p{display:flex;gap:12px;align-items:center;padding:12px 14px;border-radius:14px}
+.hdd-p.on{background:#fdf6e6;color:#2a1a3a}
+.hdd-p.off{border:1px dashed rgba(255,255,255,.28);background:rgba(255,255,255,.04);color:#bfb2d4}
+.hdd-ico{flex:none;width:44px;height:44px;border-radius:50%;display:grid;place-items:center;font-size:1.3rem}
+.hdd-p.on .hdd-ico{background:#f4dfae}
+.hdd-p.off .hdd-ico{background:rgba(255,255,255,.1)}
+.hdd-p small{display:block;font:700 .68rem Figtree,sans-serif;letter-spacing:.07em}
+.hdd-p.on small{color:#9a7a2e}
+.hdd-p.off small{color:#a597bd}
+.hdd-tx{font-size:1rem;line-height:1.35}
+.hdd-p.on .hdd-tx{color:#2a1a3a}
+.hdd-p em{display:block;font-size:.76rem;color:#7a6e86;margin-top:2px;font-style:normal}
+.hdd-pie{margin-top:22px;font-size:.9rem}
+.hdd-pie a{color:#cbbfe0;text-decoration:none}

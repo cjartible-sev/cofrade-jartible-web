@@ -1,17 +1,13 @@
 {
+  "titulo": "Cofrade Jartible",
   "lema": "Toda la Semana Santa de Sevilla, contada por sevillanos locos por la Semana Santa.",
   "fecha_ramos": "2027-03-21",
-  "instagram": "https://www.instagram.com/cjartiblesev",
-  "youtube": "https://www.youtube.com/@CofradeJartibleSevilla",
-  "tiktok": "https://www.tiktok.com/@cofradejartible",
-  "x": "https://x.com/cjartible",
-  "whatsapp": "https://www.whatsapp.com/channel/0029Vaye2KiCRs1uuWW6LG3Q",
+  "instagram": "",
+  "youtube": "",
+  "tiktok": "",
+  "x": "",
+  "whatsapp": "",
   "reto_pregunta": "¿Qué día de la Semana Santa sale la Esperanza de Triana?",
-  "reto_respuestas": [
-    "Jueves Santo",
-    "Madrugá (Viernes Santo)",
-    "Domingo de Ramos"
-  ],
-  "reto_correcta": 2,
-  "titulo": "Cofrade Jartible"
+  "reto_respuestas": ["Jueves Santo", "Madrugá (Viernes Santo)", "Domingo de Ramos"],
+  "reto_correcta": 2
 }
