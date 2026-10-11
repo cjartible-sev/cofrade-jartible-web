@@ -75,7 +75,15 @@ var HDD = (function () {
     });
     return ini.concat(dentro).slice(0, max || 6);
   }
-  return { norm: norm, limpia: limpia, esc: esc, pistas: pistas, preparar: preparar, delDia: delDia, sugerir: sugerir };
+  var PUNTOS = [200, 100, 50, 20];
+  function puntos(n) { return PUNTOS[n - 1] || 0; }
+  function insertarRanking(lista, e, max) {
+    max = max || 10;
+    var l = lista.concat([e]).sort(function (a, b) { return b.p - a.p || b.a - a.a || a.f - b.f; });
+    var pos = l.indexOf(e) + 1;
+    return { lista: l.slice(0, max), pos: pos <= max ? pos : 0 };
+  }
+  return { puntos: puntos, insertarRanking: insertarRanking, norm: norm, limpia: limpia, esc: esc, pistas: pistas, preparar: preparar, delDia: delDia, sugerir: sugerir };
 })();
 if (typeof module !== 'undefined') module.exports = HDD;
 
@@ -98,33 +106,51 @@ if (typeof module !== 'undefined') module.exports = HDD;
   var pool = B.lista.filter(function (e) { return e.pistas.reales >= 3; });
   if (!pool.length) pool = B.lista;
 
-  var modo = 'dia', meta, est, partida = 0;
   var $ = function (id) { return document.getElementById(id); };
+  var modo = 'dia', meta, est, partida = 0, run = { p: 0, a: 0 };
+  function leer(k, def) { try { var s = localStorage.getItem(k); return s ? JSON.parse(s) : def; } catch (e) { return def; } }
+  function escribir(k, v) { try { localStorage.setItem(k, JSON.stringify(v)); } catch (e) {} }
+  function nombre() { return ($('hdd-nom').value || '').replace(/[<>]/g, '').trim().slice(0, 16) || 'Anónimo'; }
 
-  function guardar() {
-    if (modo !== 'dia') return;
-    try { localStorage.setItem('hdd:' + hoy, JSON.stringify(est)); } catch (e) {}
-  }
+  function guardar() { if (modo === 'dia') escribir('hdd:' + hoy, est); }
   function nueva() {
     est = { g: [], fin: false, gano: false };
     if (modo === 'dia') {
       meta = HDD.delDia(pool, dias);
-      try { var s = localStorage.getItem('hdd:' + hoy); if (s) est = JSON.parse(s); } catch (e) {}
+      var s = leer('hdd:' + hoy, null); if (s) est = s;
     } else {
       var otra; do { otra = B.lista[Math.floor(Math.random() * B.lista.length)]; } while (B.lista.length > 1 && meta && otra.id === meta.id);
       meta = otra; partida++;
     }
     $('hdd-in').value = ''; cerrarSug(); pintar();
   }
+  function cerrarRun() {
+    est.guardado = run.p; est.pos = 0;
+    if (run.p > 0) {
+      var x = HDD.insertarRanking(leer('hdd:rank', []), { n: nombre(), p: run.p, a: run.a, f: Date.now() }, 10);
+      escribir('hdd:rank', x.lista); est.pos = x.pos;
+    }
+    run = { p: 0, a: 0 }; escribir('hdd:run', run);
+  }
+
+  function pintaRank() {
+    var l = leer('hdd:rank', []);
+    $('hdd-rl').innerHTML = l.length ? l.map(function (e, i) {
+      var f = new Date(e.f).toLocaleDateString('es-ES', { day: 'numeric', month: 'short' });
+      return '<li><span class="pos">' + (i + 1) + '</span><span class="nom">' + HDD.esc(e.n) + '<small>' + e.a + (e.a === 1 ? ' acierto' : ' aciertos') + ' · ' + HDD.esc(f) + '</small></span><span class="pun">' + e.p + ' pts</span></li>';
+    }).join('') : '<li class="vacio">Todavía no hay partidas guardadas.</li>';
+  }
 
   function pintar() {
-    var tot = meta.pistas.length, fallos = est.g.length - (est.gano ? 1 : 0);
+    var inf = modo === 'inf';
+    var tot = meta.pistas.length;
     var reveladas = est.fin ? tot : Math.min(tot, est.g.length + 1);
-    $('hdd-ey').textContent = modo === 'dia' ? 'HERMANDAD DEL DÍA · Nº ' + numero : 'MODO INFINITO · Nº ' + partida;
-    $('hdd-fecha').textContent = modo === 'dia' ? fechaTxt : 'Una hermandad al azar. Juega las veces que quieras.';
-    $('hdd-t1').className = 'hdd-tab' + (modo === 'dia' ? ' on' : '');
-    $('hdd-t2').className = 'hdd-tab' + (modo === 'inf' ? ' on' : '');
-    // intentos
+    $('hdd-ey').textContent = inf ? 'MODO INFINITO · Nº ' + partida : 'HERMANDAD DEL DÍA · Nº ' + numero;
+    $('hdd-fecha').textContent = inf ? 'Encadena aciertos. Si fallas, termina la partida.' : fechaTxt;
+    $('hdd-t1').className = 'hdd-tab' + (inf ? '' : ' on');
+    $('hdd-t2').className = 'hdd-tab' + (inf ? ' on' : '');
+    $('hdd-run').hidden = !inf; $('hdd-rank').hidden = !inf;
+    if (inf) { $('hdd-pts').textContent = run.p; $('hdd-ac').textContent = run.a; pintaRank(); }
     var ci = '';
     for (var i = 0; i < tot; i++) {
       var cl = 'hdd-ci', tx = String(i + 1);
@@ -134,8 +160,9 @@ if (typeof module !== 'undefined') module.exports = HDD;
     }
     $('hdd-ci').innerHTML = ci;
     $('hdd-int').textContent = est.fin ? (est.gano ? 'Acertaste en ' + est.g.length + ' de ' + tot : 'Sin intentos') : 'Intento ' + (est.g.length + 1) + ' de ' + tot;
-    $('hdd-des').innerHTML = 'Tienes <strong>' + tot + ' intentos</strong>. Empiezas con una pista y cada fallo desvela otra.';
-    // pistas
+    $('hdd-des').innerHTML = inf
+      ? 'Tienes <strong>' + tot + ' intentos</strong>. Acertar a la 1.ª vale <strong>200</strong> pts, a la 2.ª <strong>100</strong>, a la 3.ª <strong>50</strong> y a la 4.ª <strong>20</strong>.'
+      : 'Tienes <strong>' + tot + ' intentos</strong>. Empiezas con una pista y cada fallo desvela otra.';
     var ph = '';
     meta.pistas.forEach(function (p, i) {
       if (i < reveladas) {
@@ -145,24 +172,33 @@ if (typeof module !== 'undefined') module.exports = HDD;
       }
     });
     $('hdd-ps').innerHTML = ph;
-    // fallos
     $('hdd-fa').innerHTML = est.g.map(function (id, i) {
       var bien = est.gano && i === est.g.length - 1;
       return '<span class="hdd-chip' + (bien ? ' ok' : '') + '">' + (bien ? '✓ ' : '✕ ') + HDD.esc(B.porId[id].nombre) + '</span>';
     }).join('');
     $('hdd-form').hidden = est.fin;
-    // fin
     var f = $('hdd-fin');
     if (!est.fin) { f.hidden = true; return; }
     f.hidden = false; f.textContent = '';
-    var t = document.createElement('h3'); t.textContent = est.gano ? '¡Lo has adivinado!' : 'Era: ' + meta.nombre;
-    var pp = document.createElement('p'); pp.textContent = est.gano ? meta.nombre : 'Mañana habrá otra hermandad.';
-    if (modo === 'inf' && !est.gano) pp.textContent = 'No pasa nada, prueba con otra.';
-    f.appendChild(t); f.appendChild(pp);
-    var b = document.createElement('button'); b.type = 'button';
-    if (modo === 'dia') { b.textContent = 'Compartir resultado'; b.addEventListener('click', compartir); }
-    else { b.textContent = 'Otra hermandad'; b.addEventListener('click', nueva); }
-    f.appendChild(b);
+    var t = document.createElement('h3'), pp = document.createElement('p');
+    function boton(txt, fn, sec) { var b = document.createElement('button'); b.type = 'button'; b.textContent = txt; if (sec) b.className = 'sec'; b.addEventListener('click', fn); f.appendChild(b); }
+    if (!inf) {
+      t.textContent = est.gano ? '¡Lo has adivinado!' : 'Era: ' + meta.nombre;
+      pp.textContent = est.gano ? meta.nombre : 'Mañana habrá otra hermandad.';
+      f.appendChild(t); f.appendChild(pp); boton('Compartir resultado', compartir);
+    } else if (est.gano) {
+      t.textContent = '¡Lo has adivinado! +' + (est.pts || 0) + ' puntos';
+      pp.textContent = meta.nombre + ' · Llevas ' + run.p + ' puntos';
+      f.appendChild(t); f.appendChild(pp);
+      boton('Siguiente hermandad', nueva);
+      boton('Terminar y guardar', function () { cerrarRun(); aviso(est.pos ? 'Partida guardada: puesto ' + est.pos + ' del ranking' : 'Partida guardada', 4000); nueva(); }, true);
+    } else {
+      t.textContent = 'Era: ' + meta.nombre;
+      pp.textContent = est.guardado > 0
+        ? 'Fin de la partida: ' + est.guardado + ' puntos. ' + (est.pos ? 'Puesto ' + est.pos + ' del ranking.' : 'No entra en el top 10.')
+        : 'Fin de la partida sin puntos.';
+      f.appendChild(t); f.appendChild(pp); boton('Nueva partida', nueva);
+    }
   }
 
   function compartir() {
@@ -173,21 +209,25 @@ if (typeof module !== 'undefined') module.exports = HDD;
   }
 
   var msgT;
-  function aviso(t) { var m = $('hdd-msg'); m.textContent = t; clearTimeout(msgT); msgT = setTimeout(function () { m.textContent = ''; }, 2400); }
+  function aviso(t, ms) { var m = $('hdd-msg'); m.textContent = t; clearTimeout(msgT); msgT = setTimeout(function () { m.textContent = ''; }, ms || 2400); }
 
   function probar() {
     if (est.fin) return;
-    var txt = $('hdd-in').value, id = HDD.limpia(txt) in B.indice ? B.indice[HDD.limpia(txt)] : -1;
+    var txt = $('hdd-in').value, c = HDD.limpia(txt), id = c in B.indice ? B.indice[c] : -1;
     if (!txt.trim()) return;
     if (id < 0) { aviso('Elige una hermandad de la lista'); return; }
     if (est.g.indexOf(id) !== -1) { aviso('Ya la has probado'); return; }
     est.g.push(id);
-    if (id === meta.id) { est.gano = true; est.fin = true; }
-    else if (est.g.length >= meta.pistas.length) est.fin = true;
+    if (id === meta.id) {
+      est.gano = true; est.fin = true;
+      if (modo === 'inf') { est.pts = HDD.puntos(est.g.length); run.p += est.pts; run.a++; escribir('hdd:run', run); }
+    } else if (est.g.length >= meta.pistas.length) {
+      est.fin = true;
+      if (modo === 'inf') cerrarRun();
+    }
     guardar(); $('hdd-in').value = ''; cerrarSug(); pintar();
   }
 
-  // sugerencias
   var sug = $('hdd-sug'), act = -1, items = [];
   function cerrarSug() { sug.hidden = true; sug.innerHTML = ''; act = -1; items = []; }
   function pintaSug() {
@@ -207,8 +247,10 @@ if (typeof module !== 'undefined') module.exports = HDD;
   sug.addEventListener('mousedown', function (e) { var li = e.target.closest('li'); if (li) { e.preventDefault(); elegir(+li.dataset.i); } });
   document.addEventListener('click', function (e) { if (!e.target.closest('.hdd-campo')) cerrarSug(); });
   $('hdd-go').addEventListener('click', probar);
+  $('hdd-nom').value = leer('hdd:nombre', '');
+  $('hdd-nom').addEventListener('change', function () { escribir('hdd:nombre', nombre() === 'Anónimo' ? '' : nombre()); });
   $('hdd-t1').addEventListener('click', function () { if (modo !== 'dia') { modo = 'dia'; nueva(); } });
-  $('hdd-t2').addEventListener('click', function () { if (modo !== 'inf') { modo = 'inf'; meta = null; nueva(); } });
+  $('hdd-t2').addEventListener('click', function () { if (modo !== 'inf') { modo = 'inf'; meta = null; run = leer('hdd:run', { p: 0, a: 0 }); nueva(); } });
 
   nueva();
 })();

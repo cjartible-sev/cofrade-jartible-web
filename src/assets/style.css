@@ -204,3 +204,27 @@ footer.pie{background:#1d0538;color:#bfaed4;text-align:center;padding:24px 20px;
 .hdd-p em{display:block;font-size:.76rem;color:#7a6e86;margin-top:2px;font-style:normal}
 .hdd-pie{margin-top:22px;font-size:.9rem}
 .hdd-pie a{color:#cbbfe0;text-decoration:none}
+
+/* Adivina la hermandad: puntos y ranking */
+.hdd-run{display:flex;gap:10px;justify-content:center;align-items:stretch;margin:0 0 12px;flex-wrap:wrap}
+.hdd-run[hidden],.hdd-rank[hidden]{display:none}
+.hdd-st{min-width:92px;padding:8px 14px;border-radius:12px;background:rgba(255,255,255,.08);border:1px solid rgba(245,215,122,.35)}
+.hdd-st span{display:block;font:700 .66rem Figtree,sans-serif;letter-spacing:.07em;color:#cbbfe0;text-transform:uppercase}
+.hdd-st strong{font:800 1.5rem Figtree,sans-serif;color:#f5d77a}
+.hdd-jug{flex:1;min-width:150px;text-align:left;padding:8px 12px;border-radius:12px;background:rgba(255,255,255,.08)}
+.hdd-jug label{display:block;font:700 .66rem Figtree,sans-serif;letter-spacing:.07em;color:#cbbfe0;text-transform:uppercase}
+.hdd-jug input{width:100%;border:0;background:transparent;color:#fff;font:600 1rem Figtree,sans-serif;padding:2px 0;outline:0;border-bottom:1px dashed rgba(255,255,255,.3)}
+.hdd-fin button.sec{background:transparent;border:1px solid rgba(255,255,255,.35);margin-left:8px}
+.hdd-rank{margin-top:26px;padding:16px;border-radius:14px;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.14);text-align:left}
+.hdd-rank h2{font:800 1.3rem Figtree,sans-serif;margin:0 0 10px;color:#f5d77a}
+.hdd-rank ol{list-style:none;margin:0;padding:0;display:grid;gap:6px}
+.hdd-rank li{display:flex;align-items:center;gap:10px;padding:8px 10px;border-radius:10px;background:rgba(255,255,255,.05)}
+.hdd-rank li.vacio{color:#bfb2d4;background:none}
+.hdd-rank .pos{flex:none;width:26px;height:26px;border-radius:50%;display:grid;place-items:center;font-weight:800;font-size:.85rem;background:rgba(255,255,255,.12)}
+.hdd-rank li:nth-child(1) .pos{background:#d4a932;color:#2a1a3a}
+.hdd-rank li:nth-child(2) .pos{background:#b9bfc8;color:#2a1a3a}
+.hdd-rank li:nth-child(3) .pos{background:#b8794a;color:#fff}
+.hdd-rank .nom{flex:1;font-weight:600}
+.hdd-rank .nom small{display:block;font-weight:400;font-size:.72rem;color:#bfb2d4}
+.hdd-rank .pun{font-weight:800;color:#f5d77a}
+.hdd-nota{margin:10px 0 0;font-size:.78rem;color:#a99bc0}
