@@ -71,6 +71,7 @@ permalink: /index.html
         </a>
         <h3>{{ v.titulo }}</h3>
         <time datetime="{{ v.fecha }}">{{ v.fecha | fechaLarga }}</time>
+        <p class="video-enlace"><a href="https://www.youtube.com/watch?v={{ v.id }}" target="_blank" rel="noopener">Ver en YouTube</a></p>
       </div>
       <div class="videos-lista">
         {% for v in youtube.videos %}{% if not loop.first %}
@@ -86,6 +87,21 @@ permalink: /index.html
     {% endif %}
   </div>
 </section>
+
+<script>
+document.addEventListener('click', function (e) {
+  var a = e.target.closest ? e.target.closest('.yt-fachada') : null;
+  if (!a || !a.parentNode) return;
+  e.preventDefault();
+  var f = document.createElement('iframe');
+  f.src = 'https://www.youtube-nocookie.com/embed/' + encodeURIComponent(a.dataset.id) + '?autoplay=1&rel=0&playsinline=1';
+  f.title = a.getAttribute('aria-label') || 'Vídeo de YouTube';
+  f.allow = 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share';
+  f.referrerPolicy = 'strict-origin-when-cross-origin';
+  f.allowFullscreen = true;
+  a.parentNode.replaceChild(f, a);
+});
+</script>
 
 {% set fotos = collections.galeria | primeros(6) %}
 {% if fotos.length %}

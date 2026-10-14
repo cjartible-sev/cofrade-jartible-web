@@ -13,7 +13,7 @@ function parsear(xml) {
     titulo: decodificar((e.match(/<title>([^<]*)</) || [])[1] || ""),
     fecha: (e.match(/<published>([^<]+)</) || [])[1],
     short: /\/shorts\//.test(e),
-  })).filter((v) => v.id && !v.short).slice(0, 4);
+  })).filter((v) => v.id).slice(0, 4);
 }
 
 module.exports = async function () {

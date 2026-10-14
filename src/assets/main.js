@@ -35,16 +35,3 @@
     if (vacio && !visibles) vacio.hidden = false;
   });
 })();
-
-/* Vídeos de YouTube: se carga el reproductor al pulsar */
-document.addEventListener('click', function (e) {
-  var a = e.target.closest('.yt-fachada');
-  if (!a) return;
-  e.preventDefault();
-  var f = document.createElement('iframe');
-  f.src = 'https://www.youtube-nocookie.com/embed/' + encodeURIComponent(a.dataset.id) + '?autoplay=1&rel=0';
-  f.title = a.getAttribute('aria-label') || 'Vídeo de YouTube';
-  f.allow = 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share';
-  f.allowFullscreen = true;
-  a.replaceWith(f);
-});

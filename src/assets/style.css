@@ -243,3 +243,4 @@ footer.pie{background:#1d0538;color:#bfaed4;text-align:center;padding:24px 20px;
 .video-peq h3{font-size:1.1rem;line-height:1.2;margin-bottom:2px}
 .video-peq:hover h3{text-decoration:underline}
 @media (max-width:820px){.videos{grid-template-columns:1fr}}
+.video-enlace{margin:6px 0 0;font-size:.9rem}.video-enlace a{color:var(--tenue)}
