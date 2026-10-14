@@ -59,6 +59,34 @@ permalink: /index.html
   </div>
 </section>
 
+<section class="bloque sin-arriba" id="videos">
+  <div class="wrap">
+    <div class="cab"><h2>Últimos vídeos</h2><a href="{{ youtube.canal }}" target="_blank" rel="noopener">Ver canal en YouTube</a></div>
+    {% if youtube.videos.length %}
+    <div class="videos">
+      {% set v = youtube.videos[0] %}
+      <div class="video-grande">
+        <a class="yt-fachada" href="https://www.youtube.com/watch?v={{ v.id }}" data-id="{{ v.id }}" target="_blank" rel="noopener" aria-label="Reproducir: {{ v.titulo }}">
+          <img src="https://i.ytimg.com/vi/{{ v.id }}/hqdefault.jpg" alt="" loading="lazy"><span class="yt-play" aria-hidden="true"></span>
+        </a>
+        <h3>{{ v.titulo }}</h3>
+        <time datetime="{{ v.fecha }}">{{ v.fecha | fechaLarga }}</time>
+      </div>
+      <div class="videos-lista">
+        {% for v in youtube.videos %}{% if not loop.first %}
+        <a class="video-peq" href="https://www.youtube.com/watch?v={{ v.id }}" target="_blank" rel="noopener">
+          <span class="foto"><img src="https://i.ytimg.com/vi/{{ v.id }}/mqdefault.jpg" alt="" loading="lazy"></span>
+          <span><h3>{{ v.titulo }}</h3><time datetime="{{ v.fecha }}">{{ v.fecha | fechaLarga }}</time></span>
+        </a>
+        {% endif %}{% endfor %}
+      </div>
+    </div>
+    {% else %}
+    <p>Mira todos nuestros vídeos en el <a href="{{ youtube.canal }}" target="_blank" rel="noopener">canal de YouTube</a>.</p>
+    {% endif %}
+  </div>
+</section>
+
 {% set fotos = collections.galeria | primeros(6) %}
 {% if fotos.length %}
 <section class="bloque sin-arriba" id="galeria">
